@@ -28,6 +28,14 @@ Every meaningful milestone becomes a transmission.
 
 ---
 
+# Operating Guide
+
+For the step-by-step issue review, canonization, and completion workflow, see:
+
+[OPERATING_GUIDE.md](OPERATING_GUIDE.md)
+
+---
+
 # Repository Structure
 
 ```text
