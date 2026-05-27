@@ -231,7 +231,9 @@ def render_assets(raw: str) -> str:
     for src, caption in assets:
         figures.append(
             "<figure>"
+            f'<a href="{html.escape(src, quote=True)}" target="_blank" rel="noopener">'
             f'<img src="{html.escape(src, quote=True)}" alt="{html.escape(caption, quote=True)}" />'
+            "</a>"
             f"<figcaption>{html.escape(caption)}</figcaption>"
             "</figure>"
         )
@@ -384,7 +386,8 @@ body{{
 .pill-row{{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}}
 .pill{{border:1px solid rgba(231,173,103,.42);border-radius:999px;padding:7px 11px;color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:.11em;background:rgba(231,173,103,.08)}}
 .card-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}}
-.card{{border:1px solid var(--soft);background:rgba(5,10,20,.38);border-radius:14px;padding:22px}}
+.card{{display:block;text-decoration:none;color:var(--cream);border:1px solid var(--soft);background:rgba(5,10,20,.38);border-radius:14px;padding:22px;transition:.2s ease}}
+.card:hover{{border-color:var(--gold);transform:translateY(-2px)}}
 .card h4{{margin:0 0 12px;color:var(--gold2);text-transform:uppercase;letter-spacing:.14em;font-size:13px}}
 .index-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}}
 .index-card{{display:block;text-decoration:none;color:var(--cream);border:1px solid var(--soft);background:rgba(5,10,20,.44);border-radius:16px;padding:22px;transition:.2s ease}}
@@ -415,7 +418,7 @@ body{{
     <div class="participants">Master Entry Point</div>
     <p class="lede">The living index for the ConCOREdance Transmission Archive: a chronological map of project evolution, visual doctrine, implementation history, and interdisciplinary continuity.</p>
     <div class="divider"></div>
-    <div class="meta-grid"><span>Manifest v1.0</span><span>|</span><span>{count} {plural}</span><span>|</span><span>Active Canon</span><span>|</span><a href="team/">Project Team</a></div>
+    <div class="meta-grid"><span>Manifest v1.0</span><span>|</span><span>{count} {plural}</span><span>|</span><span>Active Canon</span><span>|</span><a href="team/">Project Team</a><span>|</span><a href="assets/">Asset Library</a><span>|</span><a href="doctrine/">Doctrine</a></div>
   </div>
   <div class="hero-art"></div>
 </section>
@@ -430,10 +433,10 @@ body{{
 <section class="section panel">
   <div class="section-title"><span class="num">01</span><h2>Archive Doctrine</h2></div>
   <div class="card-grid">
-    <div class="card"><h4>Individual Transmissions</h4><p>Each transmission is a sealed moment in time with its own HTML file, metadata file, and supporting assets.</p></div>
-    <div class="card"><h4>Master Index</h4><p>This page is the single entry point for reading the archive from beginning to end.</p></div>
-    <div class="card"><h4>Manifest</h4><p>The archive_manifest.json file is the searchable metadata backbone for future automation.</p></div>
-    <div class="card"><h4>Continuity</h4><p>Brandon preserves the clinical vision. Gregory preserves doctrine. Cody preserves implementation detail.</p></div>
+    <a class="card" href="doctrine/"><h4>Individual Transmissions</h4><p>Each transmission is a sealed moment in time with its own HTML file, metadata file, and supporting assets.</p></a>
+    <a class="card" href="./"><h4>Master Index</h4><p>This page is the single entry point for reading the archive from beginning to end.</p></a>
+    <a class="card" href="archive_manifest.json"><h4>Manifest</h4><p>The archive_manifest.json file is the searchable metadata backbone for future automation.</p></a>
+    <a class="card" href="assets/"><h4>Asset Library</h4><p>Mockups, screenshots, posters, and transmission visuals are gathered into a browsable archive shelf.</p></a>
   </div>
 </section>
 

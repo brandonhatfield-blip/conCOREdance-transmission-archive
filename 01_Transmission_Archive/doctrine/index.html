@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ConCOREdance Archive Doctrine</title>
+<style>
+:root{--bg:#050914;--panel:rgba(7,14,26,.78);--gold:#e7ad67;--gold2:#f0c892;--cream:#f4efe8;--muted:#b8bec8;--line:rgba(231,173,103,.42);--soft:rgba(255,255,255,.12)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#050914;color:var(--cream);font-family:Inter,Avenir Next,Avenir,Segoe UI,system-ui,sans-serif}
+.vista{position:fixed;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(5,9,20,.16),rgba(5,9,20,.96)),url("../assets/transmission_visual_standard.png") center top/cover no-repeat;filter:saturate(.95) brightness(.72)}
+.page{width:min(1060px,calc(100vw - 32px));margin:30px auto 60px}
+.hero,.section{border:1px solid var(--line);border-radius:18px;background:var(--panel);backdrop-filter:blur(18px);box-shadow:0 24px 80px rgba(0,0,0,.48)}
+.hero{min-height:360px;display:flex;align-items:flex-end;padding:42px;background:linear-gradient(90deg,rgba(5,9,20,.90),rgba(5,9,20,.42)),url("../assets/archive_navigator_gateway.png") center/cover no-repeat}
+.brand{letter-spacing:.34em;text-transform:uppercase;color:var(--gold2);font-size:12px;margin-bottom:18px}
+h1{font-family:Cormorant Garamond,Georgia,serif;font-size:clamp(52px,7vw,90px);font-weight:300;line-height:.94;margin:0 0 18px}
+.lede,p,li{color:rgba(244,239,232,.84);font-size:17px;line-height:1.68}
+.lede{max-width:720px;margin:0}
+.nav{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
+.nav a,.card a{color:var(--gold2);text-decoration:none}
+.nav a{border:1px solid var(--line);border-radius:999px;padding:9px 13px;background:rgba(231,173,103,.08);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.section{margin-top:22px;padding:34px 38px}
+.section-title{display:flex;align-items:baseline;gap:18px;margin-bottom:20px}
+.section-title span{color:var(--gold);font-size:30px;font-weight:300}
+.section-title h2{margin:0;text-transform:uppercase;letter-spacing:.22em;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{border:1px solid var(--soft);border-radius:14px;background:rgba(5,10,20,.44);padding:22px}
+.card h3{margin:0 0 12px;color:var(--gold2);text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+.card p{margin:0}
+code{color:var(--gold2)}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.hero,.section{padding:26px 24px}}
+</style>
+</head>
+<body>
+<div class="vista"></div>
+<main class="page">
+  <section class="hero">
+    <div>
+      <div class="brand">ConCOREdance / Archive</div>
+      <h1>Archive Doctrine</h1>
+      <p class="lede">The operating philosophy for how transmissions, metadata, visual artifacts, and continuity records should live together.</p>
+    </div>
+  </section>
+
+  <nav class="nav">
+    <a href="../">Archive Index</a>
+    <a href="../assets/">Asset Library</a>
+    <a href="../team/">Project Team</a>
+    <a href="../../OPERATING_GUIDE.md">Operating Guide</a>
+  </nav>
+
+  <section class="section">
+    <div class="section-title"><span>01</span><h2>Core Doctrine</h2></div>
+    <div class="grid">
+      <article class="card"><h3>Individual Transmissions</h3><p>Each transmission is a sealed moment in time with its own HTML file, metadata file, and any supporting assets required to understand the record.</p></article>
+      <article class="card"><h3>Master Index</h3><p>The archive index is the reader-facing entry point. It should never require someone to guess which folder matters.</p></article>
+      <article class="card"><h3>Manifest</h3><p><a href="../archive_manifest.json">archive_manifest.json</a> is the searchable metadata backbone for automation, indexing, and future navigation.</p></article>
+      <article class="card"><h3>Continuity</h3><p>Neal preserves the clinical vision. Gregory preserves doctrine. Cody preserves implementation detail. The archive exists to keep those threads legible.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span>02</span><h2>Where Things Live</h2></div>
+    <p><code>transmissions/</code> holds durable Markdown canon.</p>
+    <p><code>01_Transmission_Archive/</code> holds the public visual archive.</p>
+    <p><code>01_Transmission_Archive/assets/</code> holds shared visual references and mockups.</p>
+    <p><code>01_Transmission_Archive/YYYY/CC-TX-.../assets/</code> holds assets that belong to one specific transmission.</p>
+  </section>
+</main>
+</body>
+</html>

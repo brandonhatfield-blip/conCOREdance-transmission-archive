@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ConCOREdance Archive Asset Library</title>
+<style>
+:root{--bg:#050914;--panel:rgba(7,14,26,.78);--gold:#e7ad67;--gold2:#f0c892;--cream:#f4efe8;--muted:#b8bec8;--line:rgba(231,173,103,.42);--soft:rgba(255,255,255,.12)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#050914;color:var(--cream);font-family:Inter,Avenir Next,Avenir,Segoe UI,system-ui,sans-serif}
+.vista{position:fixed;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(5,9,20,.16),rgba(5,9,20,.96)),url("transmission_visual_standard.png") center top/cover no-repeat;filter:saturate(.95) brightness(.72)}
+.page{width:min(1180px,calc(100vw - 32px));margin:30px auto 60px}
+.hero{min-height:360px;display:flex;align-items:flex-end;padding:42px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(90deg,rgba(5,9,20,.86),rgba(5,9,20,.34)),url("archive_navigator_gateway.png") center/cover no-repeat;box-shadow:0 24px 80px rgba(0,0,0,.48)}
+.brand{letter-spacing:.34em;text-transform:uppercase;color:var(--gold2);font-size:12px;margin-bottom:18px}
+h1{font-family:Cormorant Garamond,Georgia,serif;font-size:clamp(52px,7vw,90px);font-weight:300;line-height:.94;margin:0 0 18px}
+.lede{max-width:720px;color:rgba(244,239,232,.84);font-size:18px;line-height:1.65;margin:0}
+.nav{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
+.nav a,.asset a{color:var(--gold2);text-decoration:none}
+.nav a{border:1px solid var(--line);border-radius:999px;padding:9px 13px;background:rgba(231,173,103,.08);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.section{margin-top:22px;padding:34px 38px;border:1px solid var(--line);border-radius:18px;background:var(--panel);backdrop-filter:blur(18px)}
+.section-title{display:flex;align-items:baseline;gap:18px;margin-bottom:24px}
+.section-title span{color:var(--gold);font-size:30px;font-weight:300}
+.section-title h2{margin:0;text-transform:uppercase;letter-spacing:.22em;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.asset{border:1px solid var(--soft);border-radius:14px;background:rgba(5,10,20,.44);padding:14px}
+.asset img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.10);display:block;transition:.2s ease}
+.asset a:hover img{transform:translateY(-2px);border-color:var(--gold)}
+.asset h3{font-size:14px;color:var(--gold2);letter-spacing:.12em;text-transform:uppercase;margin:12px 0 7px}
+.asset p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.hero,.section{padding:26px 24px}}
+</style>
+</head>
+<body>
+<div class="vista"></div>
+<main class="page">
+  <section class="hero">
+    <div>
+      <div class="brand">ConCOREdance / Archive</div>
+      <h1>Asset Library</h1>
+      <p class="lede">A navigable shelf for the visual mockups, posters, template references, team imagery, and transmission-specific screenshots that support the archive.</p>
+    </div>
+  </section>
+
+  <nav class="nav">
+    <a href="../">Archive Index</a>
+    <a href="../team/">Project Team</a>
+    <a href="../doctrine/">Archive Doctrine</a>
+  </nav>
+
+  <section class="section">
+    <div class="section-title"><span>01</span><h2>Global Archive Assets</h2></div>
+    <div class="grid">
+      <article class="asset"><a href="mockup_shell_dark.jpeg" target="_blank" rel="noopener"><img src="mockup_shell_dark.jpeg" alt="Dark shell mockup" /></a><h3>Dark Shell Mockup</h3><p>Atmospheric dashboard and continuity shell reference.</p></article>
+      <article class="asset"><a href="mockup_design_system.jpeg" target="_blank" rel="noopener"><img src="mockup_design_system.jpeg" alt="Design system mockup" /></a><h3>Design System Mockup</h3><p>Visual doctrine and component atmosphere reference.</p></article>
+      <article class="asset"><a href="mockup_light_mode.jpeg" target="_blank" rel="noopener"><img src="mockup_light_mode.jpeg" alt="Light mode mockup" /></a><h3>Light Mode Mockup</h3><p>Alternate shell atmosphere and readability reference.</p></article>
+      <article class="asset"><a href="onesheet_feature_list.jpeg" target="_blank" rel="noopener"><img src="onesheet_feature_list.jpeg" alt="Feature list one-sheet" /></a><h3>Feature One-Sheet</h3><p>Feature framing and product communication artifact.</p></article>
+      <article class="asset"><a href="product_poster.jpeg" target="_blank" rel="noopener"><img src="product_poster.jpeg" alt="Product poster" /></a><h3>Product Poster</h3><p>High-level product identity and atmospheric positioning.</p></article>
+      <article class="asset"><a href="template_instruction_mockup.png" target="_blank" rel="noopener"><img src="template_instruction_mockup.png" alt="Template instruction mockup" /></a><h3>Template Instruction</h3><p>Instructional mockup for the transmission template workflow.</p></article>
+      <article class="asset"><a href="archive_navigator_gateway.png" target="_blank" rel="noopener"><img src="archive_navigator_gateway.png" alt="Archive navigator gateway" /></a><h3>Archive Gateway</h3><p>Hero image used by the archive navigator and transmission pages.</p></article>
+      <article class="asset"><a href="transmission_visual_standard.png" target="_blank" rel="noopener"><img src="transmission_visual_standard.png" alt="Transmission visual standard" /></a><h3>Visual Standard</h3><p>Shared environmental image used across archive surfaces.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span>02</span><h2>Transmission-Specific Screenshots</h2></div>
+    <div class="grid">
+      <article class="asset"><a href="../2026/CC-TX-2026-05-27-005/assets/concordedance-vault.png" target="_blank" rel="noopener"><img src="../2026/CC-TX-2026-05-27-005/assets/concordedance-vault.png" alt="Vault gate screenshot" /></a><h3>Vault Gate</h3><p>Screenshot from CC-TX-2026-05-27-005.</p></article>
+      <article class="asset"><a href="../2026/CC-TX-2026-05-27-005/assets/concordedance-dashboard.png" target="_blank" rel="noopener"><img src="../2026/CC-TX-2026-05-27-005/assets/concordedance-dashboard.png" alt="Home dashboard screenshot" /></a><h3>Home Dashboard</h3><p>Screenshot from CC-TX-2026-05-27-005.</p></article>
+      <article class="asset"><a href="../2026/CC-TX-2026-05-27-005/assets/concordedance-shell.png" target="_blank" rel="noopener"><img src="../2026/CC-TX-2026-05-27-005/assets/concordedance-shell.png" alt="Full shell screenshot" /></a><h3>Full Shell</h3><p>Screenshot from CC-TX-2026-05-27-005.</p></article>
+    </div>
+  </section>
+</main>
+</body>
+</html>
