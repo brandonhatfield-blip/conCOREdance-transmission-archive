@@ -197,6 +197,58 @@ body{
   font-size:18px;
   line-height:1.7;
 }
+.session-panel{
+  margin-top:22px;
+  overflow:hidden;
+}
+.session-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.24fr) minmax(280px,.76fr);
+}
+.session-image{
+  position:relative;
+  min-height:430px;
+  background:#050914;
+}
+.session-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:saturate(.88) contrast(1.03) brightness(.86);
+}
+.session-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(to bottom,rgba(5,9,20,.02),rgba(5,9,20,.46)),
+    radial-gradient(circle at 70% 20%,rgba(231,173,103,.12),transparent 32%);
+  pointer-events:none;
+}
+.session-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:38px 40px;
+  border-left:1px solid rgba(255,255,255,.09);
+  background:linear-gradient(180deg,rgba(7,14,26,.72),rgba(5,9,20,.9));
+}
+.session-copy .label{margin:0 0 18px}
+.session-copy h3{
+  margin:0 0 16px;
+  font-family:Cormorant Garamond,Georgia,serif;
+  font-size:42px;
+  line-height:1;
+  font-weight:400;
+}
+.session-copy p{
+  margin:0;
+  color:rgba(244,239,232,.8);
+  font-size:16px;
+  line-height:1.64;
+}
 .team-section{
   margin-top:22px;
   padding:34px;
@@ -409,6 +461,9 @@ body{
   .topbar{align-items:flex-start;flex-direction:column}
   .nav{flex-wrap:wrap;gap:16px}
   .hero{padding:42px 30px}
+  .session-layout{grid-template-columns:1fr}
+  .session-image{min-height:360px}
+  .session-copy{border-left:0;border-top:1px solid rgba(255,255,255,.09)}
   .team-section{padding:24px}
   .team-grid,.primary-grid{grid-template-columns:1fr}
   .consultant-row{grid-template-columns:1fr}
@@ -418,6 +473,9 @@ body{
   .page{width:min(100% - 20px,1180px);margin-top:14px}
   .team-card{grid-template-columns:1fr}
   .portrait-wrap{height:285px;border-right:0;border-bottom:1px solid rgba(255,255,255,.09)}
+  .session-image{min-height:260px}
+  .session-copy{padding:26px}
+  .session-copy h3{font-size:34px}
   .portrait.simon{width:150px;height:150px;top:54px}
   .footer-band{grid-template-columns:1fr;padding:26px}
   .footer-band blockquote{font-size:26px}
@@ -447,6 +505,19 @@ body{
       <div class="subtitle">Building continuity, together.</div>
       <div class="rule"></div>
       <p class="intro">ConCOREdance is an interdisciplinary project blending clinical insight, continuity architecture, implementation engineering, and gestalt-informed consultation into infrastructure designed for humane therapeutic work.</p>
+    </div>
+  </section>
+
+  <section class="session-panel panel" aria-labelledby="working-session-title">
+    <div class="session-layout">
+      <figure class="session-image">
+        <img src="../assets/team/project-team-working-session.png" alt="The ConCOREdance project team gathered around a table during a working session" />
+      </figure>
+      <div class="session-copy">
+        <p class="label">Working Session</p>
+        <h3 id="working-session-title">Continuity in practice.</h3>
+        <p>The project develops through disciplined conversation: clinical judgment, continuity architecture, implementation engineering, and consultation brought to the same table.</p>
+      </div>
     </div>
   </section>
 
