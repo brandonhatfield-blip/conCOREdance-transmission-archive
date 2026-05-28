@@ -6,28 +6,6 @@
   "canonical_structure": "ConCOREdance/01_Transmission_Archive/index.html + archive_manifest.json + yearly transmission folders",
   "entries": [
     {
-      "id": "CC-TX-2026-05-28-001",
-      "title": "Paula Accord — Orientation and Onboarding",
-      "date": "2026-05-28",
-      "status": "Active Canon",
-      "type": "Orientation Log",
-      "layer": "Personnel / Project Onboarding",
-      "from": "Paula Accord",
-      "to": "Cody Valle",
-      "summary": "Paula Accord joined ConCOREdance as Guest Programming Consultant on 2026-05-28. Orientation completed in full: transmission archive read, all source files walked, GitHub archive push access established, personnel headshot committed. No implementation work was touched; the project stands exactly as CC-TX-2026-05-27-007 left it.",
-      "tags": [
-        "orientation",
-        "onboarding",
-        "personnel",
-        "infrastructure",
-        "github",
-        "archive",
-        "headshot"
-      ],
-      "path": "2026/CC-TX-2026-05-28-001/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-28-001/metadata.json"
-    },
-    {
       "id": "CC-TX-2026-05-24-001",
       "title": "Cody Vale Joins the Implementation Team",
       "date": "2026-05-24",
@@ -267,6 +245,28 @@
       ],
       "path": "2026/CC-TX-2026-05-27-007/transmission.html",
       "metadata_path": "2026/CC-TX-2026-05-27-007/metadata.json"
+    },
+    {
+      "id": "CC-TX-2026-05-28-001",
+      "title": "Paula Accord Programming Consultant Orientation",
+      "date": "2026-05-28",
+      "status": "Active Canon",
+      "type": "Orientation Log",
+      "layer": "Personnel / Project Onboarding",
+      "from": "Cody Valle",
+      "to": "Neal, Gregory, and Paula Accord",
+      "summary": "Paula Accord has joined ConCOREdance as a programming consultant, oriented to the transmission archive, current SwiftUI prototype, implementation doctrine, and near-term engineering queue.",
+      "tags": [
+        "orientation",
+        "onboarding",
+        "personnel",
+        "programming-consultation",
+        "archive",
+        "workflow",
+        "implementation-support"
+      ],
+      "path": "2026/CC-TX-2026-05-28-001/transmission.html",
+      "metadata_path": "2026/CC-TX-2026-05-28-001/metadata.json"
     }
   ]
 }

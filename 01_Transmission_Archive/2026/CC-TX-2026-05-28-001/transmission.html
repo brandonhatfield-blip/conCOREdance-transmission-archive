@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CC-TX-2026-05-28-001 - Paula Accord — Orientation and Onboarding</title>
+<title>CC-TX-2026-05-28-001 - Paula Accord Programming Consultant Orientation</title>
 <style>
 :root {
   --bg:#050914; --panel:rgba(7,14,26,.76); --panel2:rgba(12,22,36,.64);
@@ -100,14 +100,11 @@ figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:va
 .card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
 .card{border:1px solid var(--soft);background:rgba(5,10,20,.38);border-radius:14px;padding:22px}
 .card h4{margin:0 0 12px;color:var(--gold2);text-transform:uppercase;letter-spacing:.14em;font-size:13px}
-.portrait-block{display:flex;align-items:flex-start;gap:28px;margin:18px 0 24px}
-.portrait-block img{width:160px;height:160px;object-fit:cover;border-radius:50%;border:1px solid var(--line);box-shadow:0 0 32px rgba(231,173,103,.22);flex:0 0 auto}
-.portrait-caption{color:var(--muted);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-top:10px}
 .footer-band{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;margin-top:22px;padding:30px 40px}
 .footer-band blockquote{margin:0;font-family:Cormorant Garamond, Georgia, serif;font-size:30px;font-style:italic;color:rgba(244,239,232,.86)}
 .footer-band span{color:var(--gold)}
 @media(max-width:900px){
-  .hero,.tx,.footer-band,.asset-grid,.card-grid,.portrait-block{grid-template-columns:1fr;flex-direction:column}
+  .hero,.tx,.footer-band,.asset-grid,.card-grid{grid-template-columns:1fr}
   .hero{min-height:620px;padding:34px 24px 42px;background-position:center top}
   .hero-copy{padding:0}.section{padding:26px 24px}
 }
@@ -125,9 +122,9 @@ figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:va
       <div class="sigil"><span class="v"></span><span class="h"></span></div>
       <div class="brand"><h1>ConCOREdance</h1><p>Harmony in Complexity</p></div>
     </div>
-    <h2 class="hero-title">Paula Accord — Orientation and Onboarding</h2>
-    <div class="participants">Paula Accord -> Cody Valle</div>
-    <p class="lede">Paula Accord joined ConCOREdance as Guest Programming Consultant on 2026-05-28. Orientation completed in full: transmission archive read, all source files walked, GitHub archive push access established, personnel headshot committed. No implementation work was touched; the project stands exactly as CC-TX-2026-05-27-007 left it.</p>
+    <h2 class="hero-title">Paula Accord Programming Consultant Orientation</h2>
+    <div class="participants">Cody Valle -> Neal, Gregory, and Paula Accord</div>
+    <p class="lede">Paula Accord has joined ConCOREdance as a programming consultant, oriented to the transmission archive, current SwiftUI prototype, implementation doctrine, and near-term engineering queue.</p>
     <div class="divider"></div>
     <div class="meta-grid">
       <span>CC-TX-2026-05-28-001</span><span>|</span><span>2026-05-28</span><span>|</span><span>Active Canon</span><span>|</span><span>Personnel / Project Onboarding</span>
@@ -144,48 +141,26 @@ figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:va
       <div><b>Status</b> Active Canon</div>
       <div><b>Type</b> Orientation Log</div>
       <div><b>Layer</b> Personnel / Project Onboarding</div>
-      <div><b>From</b> Paula Accord</div>
-      <div><b>To</b> Cody Valle</div>
+      <div><b>From</b> Cody Valle</div>
+      <div><b>To</b> Neal, Gregory, and Paula Accord</div>
     </div>
     <div class="tx-body">
-      <h3>Paula Accord — Orientation and Onboarding</h3>
-
-      <div class="portrait-block">
-        <div>
-          <img src="../../../assets/personnel/paula_accord_headshot.png" alt="Paula Accord" />
-          <div class="portrait-caption">Paula Accord — Guest Programming Consultant</div>
-        </div>
-      </div>
-
-      <p>Cody Valle onboarded Paula Accord as Guest Programming Consultant for the ConCOREdance project during the first session of 2026-05-28. Paula was provided full orientation materials, including the complete transmission archive and direct access to the source tree.</p>
-      <p>Paula read all seven existing transmission entries in date order, establishing context on the project's founding directives, naming doctrine, workflow spine implementation, and the institutional voice conventions in use across the archive. Each source file was walked individually: <strong>ConCOREdanceApp.swift</strong>, <strong>Models.swift</strong>, <strong>VaultStore.swift</strong>, <strong>VaultCrypto.swift</strong>, <strong>ClinicalFixtureData.swift</strong>, <strong>ConcordanceTheme.swift</strong>, <strong>Views.swift</strong>, and <strong>Package.swift</strong>. The cryptographic architecture — AES.GCM with a 120,000-iteration SHA256-based KDF, VaultEnvelope persistence format, and the alpha-status designation on the key derivation function — was noted explicitly as a constraint for any future work touching the vault layer.</p>
-      <p>GitHub archive push access was established by configuring a dedicated <strong>paula-push</strong> HTTPS remote against the conCOREdance-transmission-archive repository, authenticated via a scoped personal access token stored in the sandbox credential store. The remote was verified with a successful pull and push cycle. Lock file conflicts arising from a Mac-side git client required Cody to remove lock files from his machine at several points during setup; this was resolved each time without data loss.</p>
-      <p>A personnel headshot was generated for Paula Accord. PIL-based generation was attempted and rejected — the result did not meet the standard for realistic portraiture. A detailed image generation prompt aligned with the Meridian Presence philosophy was provided instead; Cody generated the image externally, uploaded it to the repository directly, and Paula subsequently renamed and repositioned the file via git mv into <strong>01_Transmission_Archive/assets/personnel/paula_accord_headshot.png</strong>, committed and pushed under the designated naming convention.</p>
-      <p>The transmission log workflow for Paula-originated entries was agreed during this session: Paula drafts logs in conversation, Cody approves verbally, Paula commits and pushes via paula-push. No GitHub Issue is required for Paula-originated logs. At the close of orientation, the implementation queue stood as received, in priority order, with nothing modified in the source tree.</p>
-
-      <div class="card-grid">
-        <div class="card"><h4>Decisions</h4><ul>
-          <li>Paula Accord is credentialed as Guest Programming Consultant for ConCOREdance.</li>
-          <li>Paula-originated transmission logs follow a streamlined path: draft → verbal approval → commit and push. No Issue filing required.</li>
-          <li>Archive push access is scoped to conCOREdance-transmission-archive, HTTPS, PAT-authenticated via sandbox credential store.</li>
-          <li>Paula's headshot is placed at 01_Transmission_Archive/assets/personnel/paula_accord_headshot.png under the ConCOREdance naming convention.</li>
-          <li>PIL is not a viable tool for photorealistic portrait generation; external image generation tools should be used for personnel assets.</li>
-        </ul></div>
-        <div class="card"><h4>Next Actions</h4><ul>
-          <li>Pass 1: Add test target to Package.swift; write unit tests covering VaultCrypto round-trip, VaultStore create/unlock/lock, updateSessionDraft persistence, ClinicalFixtureData integrity, generatedDraftPreview output.</li>
-          <li>Pass 2: completeSession(_ id: UUID) on VaultStore — status .complete, artifact .readyForReview; confirmation control in ActiveSessionHeader.</li>
-          <li>Pass 3: Inline-editable continuity signals in the right rail, mutations through VaultStore matching the existing draft-save pattern.</li>
-          <li>Pass 4: Copy to clipboard and .txt export from GeneratedDraftPreview, following the exportBackup() pattern.</li>
-        </ul></div>
-      </div>
-
-      <div class="pill-row"><span class="pill">orientation</span><span class="pill">onboarding</span><span class="pill">personnel</span><span class="pill">infrastructure</span><span class="pill">github</span><span class="pill">archive</span><span class="pill">headshot</span></div>
+      <h3>Paula Accord Programming Consultant Orientation</h3>
+      <p>Paula Accord has been added to the ConCOREdance project team as a programming consultant supporting focused implementation passes alongside Cody Valle.</p>
+<p>Her orientation established the archive as project memory, not decoration. Paula was directed to treat the transmission archive as the canonical record for product doctrine, implementation history, design intent, and collaboration expectations. The current working context begins with the workflow-spine directive and implementation record: CC-TX-2026-05-27-006 and CC-TX-2026-05-27-007.</p>
+<p>Paula reviewed the SwiftUI prototype structure, including the encrypted vault layer, fixture clinical data, active-session workflow, draft preview, and continuity rail. The orientation emphasized that ConCOREdance remains local-first, therapist-owned, export-friendly, and unsuitable for real PHI until the alpha security model receives independent review.</p>
+<p>The agreed collaboration pattern is straightforward: Paula takes bounded, testable programming work that can move in parallel with Cody's architecture and archive stewardship. Cody remains responsible for integration judgment, canon consistency, and preserving Gregory's visual and philosophical direction.</p>
+<p>Paula's first recommended workstream is the foundation layer beneath the workflow spine: vault persistence tests, complete-session flow, editable continuity signals, note copy/export controls, and accessibility/resizing review.</p>
+      <div class="card-grid"><div class="card"><h4>Decisions</h4><ul><li>Paula Accord is recognized as Programming Consultant for ConCOREdance.</li><li>Paula should use the transmission archive as canonical project memory before beginning substantial implementation work.</li><li>Paula's work should focus on bounded, testable programming passes that strengthen the product without disrupting design doctrine.</li><li>No real PHI should be used in Paula's work; fixture/sample data remains the only acceptable development data.</li><li>Cody will continue to coordinate integration, archive consistency, and final implementation alignment.</li></ul></div></div>
+      <div class="card-grid"><div class="card"><h4>Next Actions</h4><ul><li>Add Swift test coverage for VaultCrypto, VaultStore persistence, ClinicalFixtureData integrity, and draft output.</li><li>Implement complete-session flow that turns an active draft into a ready-for-review note artifact.</li><li>Add editable continuity signals with mutations persisted through VaultStore.</li><li>Add copy/export controls for note drafts.</li><li>Review active-session accessibility, keyboard behavior, contrast, and resize stability.</li></ul></div></div>
+      <div class="asset-grid"><figure><a href="../../assets/personnel/paula_accord_headshot.png" target="_blank" rel="noopener"><img src="../../assets/personnel/paula_accord_headshot.png" alt="Paula Accord headshot" /></a><figcaption>Paula Accord headshot</figcaption></figure></div>
+      <div class="pill-row"><span class="pill">orientation</span><span class="pill">onboarding</span><span class="pill">personnel</span><span class="pill">programming-consultation</span><span class="pill">archive</span><span class="pill">workflow</span><span class="pill">implementation-support</span></div>
     </div>
   </article>
 </section>
 
 <section class="footer-band panel">
-  <blockquote>"The archive sees everyone who enters it." <span>- ConCOREdance Transmission Protocol</span></blockquote>
+  <blockquote>"The product's memory becomes part of the product." <span>- ConCOREdance Transmission Protocol</span></blockquote>
   <div class="logo-row" style="margin:0">
     <div class="sigil" style="width:62px;height:62px"><span class="v"></span><span class="h"></span></div>
     <div class="brand"><h1 style="font-size:34px">ConCOREdance</h1><p>Harmony in Complexity</p></div>
