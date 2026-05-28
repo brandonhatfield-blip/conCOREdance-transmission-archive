@@ -222,6 +222,29 @@
       ],
       "path": "2026/CC-TX-2026-05-27-006/transmission.html",
       "metadata_path": "2026/CC-TX-2026-05-27-006/metadata.json"
+    },
+    {
+      "id": "CC-TX-2026-05-27-007",
+      "title": "Workflow Spine Implementation & Naming Correction Pass",
+      "date": "2026-05-27",
+      "status": "Active Canon",
+      "type": "Implementation Log",
+      "layer": "Product Architecture / Clinical Workflow",
+      "from": "Cody Valle",
+      "to": "Neal and Gregory",
+      "summary": "Completed the first functional workflow spine for the ConCOREdance SwiftUI prototype, including selectable fixture sessions, an active-session workspace, locally persisted draft state, generated progress-note preview, session-aware continuity rail, save-state visibility, and corrected ConCOREdance asset naming.",
+      "tags": [
+        "swiftui",
+        "implementation",
+        "clinical-workflow",
+        "session-lifecycle",
+        "persistence",
+        "continuity",
+        "naming-doctrine",
+        "screenshots"
+      ],
+      "path": "2026/CC-TX-2026-05-27-007/transmission.html",
+      "metadata_path": "2026/CC-TX-2026-05-27-007/metadata.json"
     }
   ]
 }
