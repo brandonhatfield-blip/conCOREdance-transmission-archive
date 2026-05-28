@@ -28,6 +28,7 @@ FIELD_NAMES = [
     "Status",
     "From",
     "To",
+    "Authorized By",
     "Tags",
     "Summary",
     "Body",
@@ -39,6 +40,7 @@ FIELD_NAMES = [
 REQUIRED_FIELDS = [
     "ID",
     "Date",
+    "Authorized By",
     "Summary",
     "Body",
 ]
@@ -185,6 +187,7 @@ def render_markdown(data: dict[str, str], issue: dict[str, Any], path: Path) -> 
         f"status: {yaml_scalar(data.get('Status', 'Active Canon'))}",
         f"from: {yaml_scalar(data.get('From', ''))}",
         f"to: {yaml_scalar(data.get('To', ''))}",
+        f"authorized_by: {yaml_scalar(data.get('Authorized By', ''))}",
         f"tags: {yaml_list(tags)}",
         f"source_issue: {issue_number}",
         f"source_url: {yaml_scalar(issue_url)}",
@@ -199,6 +202,7 @@ def render_markdown(data: dict[str, str], issue: dict[str, Any], path: Path) -> 
         "",
         f"**ID:** {data['ID']}",
         f"**Status:** {data.get('Status', 'Active Canon')}",
+        f"**Authorized By:** {data.get('Authorized By', 'Not recorded')}",
         f"**Source Issue:** #{issue_number}",
         "",
         "## Summary",
@@ -228,6 +232,7 @@ def render_markdown(data: dict[str, str], issue: dict[str, Any], path: Path) -> 
             "## Provenance",
             "",
             f"- Canonized from GitHub Issue #{issue_number}: {issue_url}",
+            f"- Authorized by: {data.get('Authorized By', 'Not recorded')}",
             f"- Canonized at: {canonized_at}",
         ]
     )

@@ -54,6 +54,7 @@ Layer:
 Status:
 From:
 To:
+Authorized By:
 Tags:
 Summary:
 Body:
@@ -371,6 +372,7 @@ Layer: Product Layer / Technical Layer
 Status: Active Canon
 From: Paula Accord
 To: Cody Valle
+Authorized By: Neal / Brandon Hatfield, LPC
 Tags: swift, testing, vault-persistence, clinical-workflow, archive
 Summary: One polished sentence that explains the outcome and why it matters.
 Body:

@@ -36,12 +36,15 @@ Layer:
 Status:
 From:
 To:
+Authorized By:
 Tags:
 Summary:
 Body:
 ```
 
 `Title:` is optional. If it is missing, the automation uses the GitHub issue title.
+
+`Authorized By:` should name the person who approved the transmission for canon. It is not the same as `From:`; a transmission can be written by Gregory, Paula, or Cody while still being authorized by Neal.
 
 4. Add optional sections when useful:
 
@@ -61,6 +64,7 @@ Before canonizing, Neal should confirm:
 - The `Date` matches the date embedded in the ID.
 - The summary is clear.
 - The body is complete enough to become historical record.
+- `Authorized By:` reflects the person approving the transmission for canon.
 - Decisions and next actions are included when relevant.
 - The issue should become permanent canon.
 

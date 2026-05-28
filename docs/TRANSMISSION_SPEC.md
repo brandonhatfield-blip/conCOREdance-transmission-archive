@@ -57,10 +57,13 @@ Layer:
 Status:
 From:
 To:
+Authorized By:
 Tags:
 Summary:
 Body:
 ```
+
+`Authorized By:` records the person who approved the transmission for canon. This is distinct from `From:`, which records who authored or sent the transmission.
 
 ## Optional Fields
 

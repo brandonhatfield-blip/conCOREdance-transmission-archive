@@ -33,6 +33,7 @@ FIELD_NAMES = [
     "Status",
     "From",
     "To",
+    "Authorized By",
     "Tags",
     "Summary",
     "Body",
@@ -49,6 +50,7 @@ REQUIRED_FIELDS = [
     "Status",
     "From",
     "To",
+    "Authorized By",
     "Tags",
     "Summary",
     "Body",
@@ -254,6 +256,7 @@ def metadata_for(data: dict[str, str], tags: list[str], rel_dir: Path) -> dict[s
         "layer": data["Layer"],
         "from": data["From"],
         "to": data["To"],
+        "authorized_by": data.get("Authorized By", ""),
         "summary": data["Summary"],
         "tags": tags,
         "path": str(rel_dir / "transmission.html"),
@@ -272,6 +275,7 @@ def render_transmission(data: dict[str, str], tags: list[str]) -> str:
         layer=html.escape(data["Layer"]),
         from_name=html.escape(data["From"]),
         to_name=html.escape(data["To"]),
+        authorized_by=html.escape(data.get("Authorized By", "")),
         summary=html.escape(data["Summary"]),
         body_html=paragraphize(data["Body"]),
         decisions_html=render_list_section("Decisions", data.get("Decisions", "")),
@@ -320,6 +324,7 @@ def render_index(manifest: dict[str, Any]) -> None:
                 type=html.escape(entry["type"]),
                 title=html.escape(entry["title"]),
                 summary=html.escape(entry["summary"]),
+                authorized_by=html.escape(str(entry.get("authorized_by") or "Not recorded")),
                 tags=pill_tags([str(tag) for tag in entry.get("tags", [])]),
             )
         )
@@ -400,6 +405,7 @@ body{{
 .index-card .id{{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:12px;margin-bottom:10px}}
 .index-card h3{{margin:0 0 10px;font-family:Cormorant Garamond, Georgia, serif;font-size:30px;font-weight:400}}
 .index-card p{{margin:0;color:rgba(244,239,232,.78);line-height:1.55}}
+.index-card .authority{{margin-top:14px;color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:.12em}}
 .footer-band{{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;margin-top:22px;padding:30px 40px}}
 .footer-band blockquote{{margin:0;font-family:Cormorant Garamond, Georgia, serif;font-size:30px;font-style:italic;color:rgba(244,239,232,.86)}}
 .footer-band span{{color:var(--gold)}}

@@ -12,5 +12,6 @@
     "Build Verified",
     "Snapshot Renderer",
     "UI Shell"
-  ]
+  ],
+  "authorized_by": "Neal / Brandon Hatfield, LPC"
 }

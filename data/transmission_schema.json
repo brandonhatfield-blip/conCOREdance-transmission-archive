@@ -11,6 +11,7 @@
     "Status",
     "From",
     "To",
+    "Authorized By",
     "Tags",
     "Summary",
     "Body"
@@ -30,6 +31,7 @@
     "Status": { "type": "string", "default": "Active Canon" },
     "From": { "type": "string", "minLength": 1 },
     "To": { "type": "string", "minLength": 1 },
+    "Authorized By": { "type": "string", "minLength": 1 },
     "Tags": {
       "oneOf": [
         { "type": "string" },

@@ -21,7 +21,8 @@
         "Implementation Leadership"
       ],
       "path": "2026/CC-TX-2026-05-24-001/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-24-001/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-24-001/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-24-002",
@@ -39,7 +40,8 @@
         "Deployment Operations"
       ],
       "path": "2026/CC-TX-2026-05-24-002/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-24-002/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-24-002/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-24-003",
@@ -57,7 +59,8 @@
         "UI Shell"
       ],
       "path": "2026/CC-TX-2026-05-24-003/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-24-003/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-24-003/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-26-001",
@@ -75,7 +78,8 @@
         "Active Canon"
       ],
       "path": "2026/CC-TX-2026-05-26-001/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-26-001/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-26-001/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-26-002",
@@ -93,7 +97,8 @@
         "Continuity Infrastructure"
       ],
       "path": "2026/CC-TX-2026-05-26-002/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-26-002/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-26-002/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-27-001",
@@ -114,7 +119,8 @@
         "continuity"
       ],
       "path": "2026/CC-TX-2026-05-27-001/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-27-001/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-27-001/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-27-002",
@@ -135,7 +141,8 @@
         "canon"
       ],
       "path": "2026/CC-TX-2026-05-27-002/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-27-002/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-27-002/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-27-003",
@@ -157,7 +164,8 @@
         "ux"
       ],
       "path": "2026/CC-TX-2026-05-27-003/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-27-003/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-27-003/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-27-004",
@@ -177,7 +185,8 @@
         "markdown"
       ],
       "path": "2026/CC-TX-2026-05-27-004/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-27-004/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-27-004/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-27-005",
@@ -198,7 +207,8 @@
         "screenshots"
       ],
       "path": "2026/CC-TX-2026-05-27-005/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-27-005/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-27-005/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-27-006",
@@ -221,7 +231,8 @@
         "documentation"
       ],
       "path": "2026/CC-TX-2026-05-27-006/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-27-006/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-27-006/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-27-007",
@@ -244,7 +255,8 @@
         "screenshots"
       ],
       "path": "2026/CC-TX-2026-05-27-007/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-27-007/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-27-007/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-28-001",
@@ -266,7 +278,8 @@
         "implementation-support"
       ],
       "path": "2026/CC-TX-2026-05-28-001/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-28-001/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-28-001/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-28-002",
@@ -291,7 +304,8 @@
         "manifest"
       ],
       "path": "2026/CC-TX-2026-05-28-002/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-28-002/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-28-002/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-28-003",
@@ -313,7 +327,8 @@
         "inline-edit"
       ],
       "path": "2026/CC-TX-2026-05-28-003/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-28-003/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-28-003/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-28-004",
@@ -336,7 +351,8 @@
         "generated-draft-preview"
       ],
       "path": "2026/CC-TX-2026-05-28-004/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-28-004/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-28-004/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     },
     {
       "id": "CC-TX-2026-05-28-005",
@@ -357,7 +373,8 @@
         "swift"
       ],
       "path": "2026/CC-TX-2026-05-28-005/transmission.html",
-      "metadata_path": "2026/CC-TX-2026-05-28-005/metadata.json"
+      "metadata_path": "2026/CC-TX-2026-05-28-005/metadata.json",
+      "authorized_by": "Neal / Brandon Hatfield, LPC"
     }
   ]
 }
