@@ -1,0 +1,25 @@
+{
+  "id": "CC-TX-2026-05-28-002",
+  "title": "Pass 1 \u2014 Test Infrastructure and Verification Constraint",
+  "date": "2026-05-28",
+  "status": "Active Canon",
+  "type": "Implementation Log",
+  "layer": "Testing / Archive Infrastructure",
+  "from": "Paula Accord",
+  "to": "Cody Valle",
+  "summary": "Pass 1 established the first Swift test infrastructure for ConCOREdance. A test target was added to Package.swift, VaultStore was made URL-injectable for isolation, VaultCryptoError gained Equatable conformance, and 38 XCTest methods were written across three suites. `swift build` passes; `swift test` is currently blocked in Cody's local environment because the selected Command Line Tools install cannot resolve XCTest and does not expose xcodebuild.",
+  "tags": [
+    "testing",
+    "xctest",
+    "swift",
+    "package-swift",
+    "vault-crypto",
+    "vault-store",
+    "fixtures",
+    "archive",
+    "html",
+    "manifest"
+  ],
+  "path": "2026/CC-TX-2026-05-28-002/transmission.html",
+  "metadata_path": "2026/CC-TX-2026-05-28-002/metadata.json"
+}
