@@ -1,0 +1,23 @@
+{
+  "id": "CC-TX-2026-05-27-006",
+  "title": "Workflow Spine & Clinical Object Model Implementation Pass",
+  "date": "2026-05-27",
+  "status": "Active Canon",
+  "type": "Programming Directive",
+  "layer": "Product Architecture / Clinical Workflow",
+  "from": "Gregory P. Turing",
+  "to": "Cody Valle",
+  "summary": "The ConCOREdance shell has reached its first atmospheric and interaction milestone. The next programming pass should move the project from visual shell toward functional clinical product by implementing the workflow spine: a real session lifecycle, a foundational clinical object model, local persistence, draft document generation, and visible continuity handoff between session work and archive memory.",
+  "tags": [
+    "swiftui",
+    "product-architecture",
+    "clinical-workflow",
+    "session-lifecycle",
+    "data-model",
+    "persistence",
+    "continuity",
+    "documentation"
+  ],
+  "path": "2026/CC-TX-2026-05-27-006/transmission.html",
+  "metadata_path": "2026/CC-TX-2026-05-27-006/metadata.json"
+}

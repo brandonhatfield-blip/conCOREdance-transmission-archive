@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CC-TX-2026-05-27-006 - Workflow Spine &amp; Clinical Object Model Implementation Pass</title>
+<style>
+:root {
+  --bg:#050914; --panel:rgba(7,14,26,.76); --panel2:rgba(12,22,36,.64);
+  --gold:#e7ad67; --gold2:#f0c892; --cream:#f4efe8; --muted:#b8bec8;
+  --teal:#65b7be; --line:rgba(231,173,103,.46); --soft:rgba(255,255,255,.12);
+  --shadow:rgba(0,0,0,.48);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; min-height:100vh; color:var(--cream);
+  font-family: Inter, Avenir Next, Avenir, Segoe UI, system-ui, sans-serif;
+  letter-spacing:.01em; background:#050914;
+}
+.vista{
+  position:fixed; inset:0; z-index:-2;
+  background:
+    linear-gradient(to bottom, rgba(5,9,20,.08), rgba(5,9,20,.95)),
+    url("../../assets/transmission_visual_standard.png") center top / cover no-repeat;
+  filter:saturate(.95) contrast(1.04) brightness(.72);
+}
+.vista:after{
+  content:""; position:absolute; inset:0;
+  background:
+    radial-gradient(circle at 68% 26%, rgba(231,173,103,.18), transparent 28%),
+    linear-gradient(90deg, rgba(5,9,20,.88) 0%, rgba(5,9,20,.58) 48%, rgba(5,9,20,.44) 100%);
+}
+.page{width:min(1180px,calc(100vw - 32px)); margin:0 auto 56px}
+.panel{
+  border:1px solid var(--line); background:var(--panel); backdrop-filter:blur(18px);
+  border-radius:18px; box-shadow:0 24px 80px var(--shadow);
+}
+.hero{
+  position:relative; min-height:min(720px,92vh); display:flex; align-items:flex-end;
+  margin:0 calc(50% - 50vw) 22px; padding:44px max(32px,calc((100vw - 1180px)/2 + 32px)) 46px;
+  overflow:hidden; isolation:isolate;
+  background:
+    linear-gradient(90deg,rgba(5,9,20,.92) 0%,rgba(5,9,20,.70) 46%,rgba(5,9,20,.24) 74%,rgba(5,9,20,.46) 100%),
+    linear-gradient(to bottom,rgba(5,9,20,.14),rgba(5,9,20,.38) 52%,rgba(5,9,20,.96)),
+    url("../../assets/archive_navigator_gateway.png") center center / cover no-repeat;
+}
+.hero:before{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:
+    radial-gradient(circle at 30% 78%,rgba(231,173,103,.22),transparent 24%),
+    radial-gradient(circle at 78% 22%,rgba(101,183,190,.18),transparent 26%),
+    linear-gradient(to bottom,transparent 72%,#050914 100%);
+}
+.hero-copy{width:min(760px,100%); padding:0 0 32px}
+.logo-row{display:flex; align-items:center; gap:22px; margin-bottom:44px}
+.sigil{width:76px;height:76px;border:1px solid var(--gold);border-radius:50%;position:relative;flex:0 0 auto;opacity:.96}
+.sigil:before,.sigil:after{content:"";position:absolute;inset:12px;border:1px solid rgba(231,173,103,.78);border-radius:50%}
+.sigil:after{inset:29px;background:var(--gold);box-shadow:0 0 24px rgba(231,173,103,.7)}
+.sigil .v,.sigil .h{position:absolute;background:rgba(231,173,103,.7);left:50%;top:-14px;width:1px;height:104px;transform:translateX(-50%)}
+.sigil .h{left:-14px;top:50%;width:104px;height:1px;transform:translateY(-50%)}
+.brand h1{margin:0;font-family:Cormorant Garamond, Georgia, serif;font-weight:400;font-size:clamp(30px,4vw,50px);line-height:.92;letter-spacing:-.02em}
+.brand p,.kicker,.label{margin:8px 0 0;color:var(--gold2);font-size:12px;letter-spacing:.38em;text-transform:uppercase}
+.hero-title{font-family:Cormorant Garamond, Georgia, serif;font-weight:300;font-size:clamp(54px,7vw,96px);line-height:.94;letter-spacing:-.035em;margin:0 0 22px;text-wrap:balance}
+.participants{color:var(--gold);letter-spacing:.36em;text-transform:uppercase;font-size:15px;margin-bottom:28px}
+.lede{max-width:650px;color:rgba(244,239,232,.86);font-size:19px;line-height:1.66;margin:0 0 44px}
+.divider{height:1px;width:480px;max-width:100%;background:linear-gradient(90deg,var(--gold),transparent);position:relative;margin:0 0 28px}
+.divider:after{content:"*";position:absolute;right:44%;top:-11px;color:var(--gold);text-shadow:0 0 18px var(--gold)}
+.meta-grid{display:flex;flex-wrap:wrap;gap:16px;color:var(--muted);font-size:14px}
+.hero-art{position:absolute;inset:0;pointer-events:none}
+.monolith{position:absolute;right:20%;bottom:14%;width:38px;height:196px;border-radius:24px 24px 5px 5px;background:linear-gradient(90deg,#111827,#e7ad67 48%,#1f2937 62%,#050914);box-shadow:0 0 35px rgba(231,173,103,.45);opacity:.32}
+.orbit,.orbit:before,.orbit:after{position:absolute;border:1px solid rgba(231,173,103,.3);border-radius:50%;content:""}
+.orbit{right:3%;top:10%;width:460px;height:460px;transform:rotate(-18deg) scaleX(1.2);opacity:.52}
+.orbit:before{inset:70px;transform:rotate(34deg) scaleX(.7)}
+.orbit:after{inset:130px;transform:rotate(-45deg) scaleX(1.5)}
+.star{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 18px var(--gold)}
+.star.s1{right:24%;top:18%}.star.s2{right:48%;top:34%}.star.s3{right:12%;top:42%}
+.section{margin-top:22px;padding:34px 38px}
+.section-title{display:flex;align-items:baseline;gap:18px;margin-bottom:24px}
+.section-title .num{color:var(--gold);font-size:30px;font-weight:300}
+.section-title h2{margin:0;text-transform:uppercase;letter-spacing:.22em;font-size:15px;font-weight:700}
+.copy p,.tx-body p,.card p{margin:0 0 18px;color:rgba(244,239,232,.84);font-size:17px;line-height:1.68}
+.tx-body ul{margin:0 0 18px;padding-left:22px;color:rgba(244,239,232,.84);font-size:17px;line-height:1.68}
+.tx-body li{margin-bottom:8px}
+strong{color:var(--gold2);font-weight:650}
+a{color:var(--gold2)}
+.tx{display:grid;grid-template-columns:250px 1fr;gap:28px;padding:30px 0;border-top:1px solid rgba(255,255,255,.1)}
+.tx:first-of-type{border-top:0;padding-top:0}
+.tx-meta{color:var(--muted);font-size:12px;line-height:1.85;text-transform:uppercase;letter-spacing:.14em}
+.tx-meta b{color:var(--gold);font-weight:500}
+.tx-body h3{margin:0 0 12px;font-family:Cormorant Garamond, Georgia, serif;font-size:34px;font-weight:400}
+.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}
+.pill{border:1px solid rgba(231,173,103,.42);border-radius:999px;padding:7px 11px;color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:.11em;background:rgba(231,173,103,.08)}
+.asset-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:18px}
+figure{margin:0}
+.asset-grid a{display:block;transition:.2s ease}
+.asset-grid a:hover{transform:translateY(-2px)}
+.asset-grid img,.feature-img{width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.1)}
+figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2);margin-top:10px}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.card{border:1px solid var(--soft);background:rgba(5,10,20,.38);border-radius:14px;padding:22px}
+.card h4{margin:0 0 12px;color:var(--gold2);text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+.footer-band{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;margin-top:22px;padding:30px 40px}
+.footer-band blockquote{margin:0;font-family:Cormorant Garamond, Georgia, serif;font-size:30px;font-style:italic;color:rgba(244,239,232,.86)}
+.footer-band span{color:var(--gold)}
+@media(max-width:900px){
+  .hero,.tx,.footer-band,.asset-grid,.card-grid{grid-template-columns:1fr}
+  .hero{min-height:620px;padding:34px 24px 42px;background-position:center top}
+  .hero-copy{padding:0}.section{padding:26px 24px}
+}
+@media print{
+  body{background:#050914}.page{width:100%;margin:0}.panel{break-inside:avoid;box-shadow:none}.vista{position:absolute}
+}
+</style>
+</head>
+<body>
+<div class="vista"></div>
+<main class="page">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="logo-row">
+      <div class="sigil"><span class="v"></span><span class="h"></span></div>
+      <div class="brand"><h1>ConCOREdance</h1><p>Harmony in Complexity</p></div>
+    </div>
+    <h2 class="hero-title">Workflow Spine &amp; Clinical Object Model Implementation Pass</h2>
+    <div class="participants">Gregory P. Turing -> Cody Valle</div>
+    <p class="lede">The ConCOREdance shell has reached its first atmospheric and interaction milestone. The next programming pass should move the project from visual shell toward functional clinical product by implementing the workflow spine: a real session lifecycle, a foundational clinical object model, local persistence, draft document generation, and visible continuity handoff between session work and archive memory.</p>
+    <div class="divider"></div>
+    <div class="meta-grid">
+      <span>CC-TX-2026-05-27-006</span><span>|</span><span>2026-05-27</span><span>|</span><span>Active Canon</span><span>|</span><span>Product Architecture / Clinical Workflow</span>
+    </div>
+  </div>
+  <div class="hero-art"><div class="orbit"></div><div class="star s1"></div><div class="star s2"></div><div class="star s3"></div><div class="monolith"></div></div>
+</section>
+
+<section class="section panel">
+  <div class="section-title"><span class="num">TX</span><h2>Transmission Record</h2></div>
+  <article class="tx">
+    <div class="tx-meta">
+      <div><b>ID</b> CC-TX-2026-05-27-006</div>
+      <div><b>Status</b> Active Canon</div>
+      <div><b>Type</b> Programming Directive</div>
+      <div><b>Layer</b> Product Architecture / Clinical Workflow</div>
+      <div><b>From</b> Gregory P. Turing</div>
+      <div><b>To</b> Cody Valle</div>
+    </div>
+    <div class="tx-body">
+      <h3>Workflow Spine &amp; Clinical Object Model Implementation Pass</h3>
+      <p>Cody,</p>
+<p>Yesterday’s pass gave ConCOREdance a room to inhabit. Today’s task is to put a nervous system in the room.</p>
+<p>The app should now begin behaving like an actual clinical companion rather than a beautiful prototype shell. This means creating the first functional layer that allows a user to move from dashboard into active session work, capture structured clinical material, preserve continuity signals, and produce a usable draft artifact at the end of the workflow.</p>
+<p>The goal is not to finish the entire product. The goal is to establish the architecture that future clinical features can trust.</p>
+<p>Primary objectives:</p>
+<p>1. Home / Today Dashboard</p>
+<ul><li>Display sample sessions or work items.</li><li>Include metadata and continuity cues.</li><li>Selecting an item should open an active session workspace.</li></ul>
+<p>2. Active Session Workspace</p>
+<ul><li>Structured adaptive panels for:</li><li>Presenting Circumstances</li><li>Presenting Focus</li><li>Interventions / Clinical Work</li><li>Client Response</li><li>Interpretative Summary</li><li>Plan / Follow-up</li><li>Continuity Signals</li></ul>
+<p>3. Clinical Object Model</p>
+<ul><li>Define foundational models for:</li><li>Client or Case Reference</li><li>Session</li><li>Clinical Note Draft</li><li>Continuity Signal</li><li>Document Artifact</li></ul>
+<p>4. Local Persistence / Draft State</p>
+<ul><li>Preserve draft state locally.</li><li>Editing should survive navigation and refresh during development.</li></ul>
+<p>5. Draft Output Preview</p>
+<ul><li>Generate a coherent structured draft from session fields.</li></ul>
+<p>6. Continuity Handoff</p>
+<ul><li>The continuity rail should respond dynamically to active session context.</li></ul>
+<p>Design doctrine:</p>
+<ul><li>Preserve atmospheric cohesion.</li><li>Adaptive panels remain non-negotiable.</li><li>Continuity should feel supportive, not intrusive.</li><li>Screenshot-ready after each pass.</li><li>No real PHI or network dependencies.</li></ul>
+<p>Build expectations:</p>
+<ul><li>swift build passes.</li><li>Dashboard-to-session navigation works.</li><li>Fixture data renders correctly.</li><li>Draft preview updates live.</li><li>Continuity rail reacts to session context.</li><li>Generate screenshots if snapshot pipeline remains active.</li></ul>
+      <div class="card-grid"><div class="card"><h4>Decisions</h4><ul><li>Visual shell phase is sufficient to begin workflow architecture.</li><li>Functional depth now takes priority over further decorative refinement.</li><li>ConCOREdance should begin modeling actual clinical workflow behavior using safe fixture data.</li><li>Local-first architecture remains preferred.</li></ul></div></div>
+      <div class="card-grid"><div class="card"><h4>Next Actions</h4><ul><li>Define Swift models.</li><li>Add fixture data.</li><li>Implement dashboard navigation.</li><li>Build editable session workspace.</li><li>Add generated note preview.</li><li>Connect continuity rail state.</li><li>Verify build and screenshots.</li><li>Report implementation findings and constraints.</li></ul></div></div>
+      
+      <div class="pill-row"><span class="pill">swiftui</span><span class="pill">product-architecture</span><span class="pill">clinical-workflow</span><span class="pill">session-lifecycle</span><span class="pill">data-model</span><span class="pill">persistence</span><span class="pill">continuity</span><span class="pill">documentation</span></div>
+    </div>
+  </article>
+</section>
+
+<section class="footer-band panel">
+  <blockquote>"The product's memory becomes part of the product." <span>- ConCOREdance Transmission Protocol</span></blockquote>
+  <div class="logo-row" style="margin:0">
+    <div class="sigil" style="width:62px;height:62px"><span class="v"></span><span class="h"></span></div>
+    <div class="brand"><h1 style="font-size:34px">ConCOREdance</h1><p>Harmony in Complexity</p></div>
+  </div>
+</section>
+</main>
+</body>
+</html>
