@@ -211,8 +211,17 @@ body{
   min-height:0;
   aspect-ratio:16/9;
   background:#050914;
+  overflow:hidden;
 }
-.session-image img{
+.session-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  animation:sessionFade 18s infinite;
+}
+.session-slide:nth-child(2){animation-delay:6s}
+.session-slide:nth-child(3){animation-delay:12s}
+.session-slide img{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -220,14 +229,50 @@ body{
   display:block;
   filter:saturate(.88) contrast(1.03) brightness(.86);
 }
+.session-slide:nth-child(1) img{object-position:center 48%}
+.session-slide:nth-child(2) img{object-position:center 44%}
+.session-slide:nth-child(3) img{object-position:center 43%}
+.session-dots{
+  position:absolute;
+  left:24px;
+  bottom:22px;
+  z-index:2;
+  display:flex;
+  gap:8px;
+}
+.session-dots span{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:rgba(244,239,232,.42);
+  box-shadow:0 0 14px rgba(0,0,0,.45);
+  animation:dotFade 18s infinite;
+}
+.session-dots span:nth-child(2){animation-delay:6s}
+.session-dots span:nth-child(3){animation-delay:12s}
 .session-image:after{
   content:"";
   position:absolute;
   inset:0;
+  z-index:1;
   background:
     linear-gradient(to bottom,rgba(5,9,20,.02),rgba(5,9,20,.46)),
     radial-gradient(circle at 70% 20%,rgba(231,173,103,.12),transparent 32%);
   pointer-events:none;
+}
+@keyframes sessionFade{
+  0%,30%{opacity:1}
+  33.333%,96.667%{opacity:0}
+  100%{opacity:1}
+}
+@keyframes dotFade{
+  0%,30%{background:var(--gold2);box-shadow:0 0 16px rgba(231,173,103,.48)}
+  33.333%,96.667%{background:rgba(244,239,232,.42);box-shadow:0 0 14px rgba(0,0,0,.45)}
+  100%{background:var(--gold2);box-shadow:0 0 16px rgba(231,173,103,.48)}
+}
+@media(prefers-reduced-motion:reduce){
+  .session-slide,.session-dots span{animation:none}
+  .session-slide:first-child{opacity:1}
 }
 .session-copy{
   display:flex;
@@ -487,7 +532,16 @@ body{
   <section class="session-panel panel" aria-labelledby="working-session-title">
     <div class="session-layout">
       <figure class="session-image">
-        <img src="../assets/team/project-team-working-session.png" alt="The ConCOREdance project team gathered around a table during a working session" />
+        <div class="session-slide">
+          <img src="../assets/team/team-candid-panel.jpg" alt="The ConCOREdance project team speaking on a conference panel" />
+        </div>
+        <div class="session-slide">
+          <img src="../assets/team/team-candid-table.jpg" alt="ConCOREdance team members gathered around project notes in a working session" />
+        </div>
+        <div class="session-slide">
+          <img src="../assets/team/team-candid-working.jpg" alt="The ConCOREdance team collaborating around a table with notes and clinical reference books" />
+        </div>
+        <div class="session-dots" aria-hidden="true"><span></span><span></span><span></span></div>
       </figure>
       <div class="session-copy">
         <p class="label">Working Session</p>
