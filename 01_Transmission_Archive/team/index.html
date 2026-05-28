@@ -307,6 +307,16 @@ body{
   border-radius:14px;
   overflow:hidden;
 }
+.consultant-grid{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.consultant-grid .consultant-row{
+  margin-top:0;
+  grid-template-columns:minmax(170px,.44fr) 1fr;
+}
 .consultant-row .portrait-wrap{
   min-height:250px;
   border-right:1px solid rgba(255,255,255,.09);
@@ -341,6 +351,7 @@ body{
 .portrait.brandon{object-position:54% 34%}
 .portrait.gregory{object-position:50% 36%}
 .portrait.cody{object-position:52% 30%}
+.portrait.paula{object-position:50% 34%}
 .portrait.simon{
   width:138px;
   height:138px;
@@ -466,6 +477,7 @@ body{
   .session-copy{border-left:0;border-top:1px solid rgba(255,255,255,.09)}
   .team-section{padding:24px}
   .team-grid,.primary-grid{grid-template-columns:1fr}
+  .consultant-grid{grid-template-columns:1fr}
   .consultant-row{grid-template-columns:1fr}
   .consultant-row .portrait-wrap{height:245px;border-right:0;border-bottom:1px solid rgba(255,255,255,.09)}
 }
@@ -586,8 +598,9 @@ body{
 
     </div>
 
-    <div class="section-heading" style="margin-top:34px"><span class="num">02</span><h3>Clinical Consultation</h3></div>
-    <article class="consultant-row">
+    <div class="section-heading" style="margin-top:34px"><span class="num">02</span><h3>Consultants</h3></div>
+    <div class="consultant-grid">
+      <article class="consultant-row">
         <div class="portrait-wrap">
           <div class="simon-field"></div>
           <img class="portrait simon" src="../assets/team/simon-morneau.png" alt="Portrait of Simon Morneau" />
@@ -606,6 +619,27 @@ body{
           </ul>
         </div>
       </article>
+
+      <article class="consultant-row">
+        <div class="portrait-wrap">
+          <img class="portrait paula" src="../assets/team/paula-accord.png" alt="Portrait of Paula Accord" />
+        </div>
+        <div class="card-body">
+          <p class="role-label">Programming Consultation</p>
+          <h4>Paula Accord</h4>
+          <p class="title">Programming Consultant</p>
+          <p class="bio">Implementation support for focused programming passes, testable workflow improvements, persistence confidence, and clinical-product infrastructure.</p>
+          <p class="focus-title">Focus Areas</p>
+          <ul class="focus-list">
+            <li>Vault persistence tests</li>
+            <li>Complete-session workflow</li>
+            <li>Editable continuity signals</li>
+            <li>Generated note export controls</li>
+            <li>Accessibility and resizing review</li>
+          </ul>
+        </div>
+      </article>
+    </div>
   </section>
 
   <section class="footer-band panel">
