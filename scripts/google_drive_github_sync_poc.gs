@@ -190,7 +190,7 @@ function hashBytes_(bytes) {
 }
 
 function joinPath_(left, right) {
-  return [left, right].filter(Boolean).join("/").replace(/\/+ /g, "/");
+  return [left, right].filter(Boolean).join("/").replace(/\/+/g, "/");
 }
 
 function encodePath_(path) {
