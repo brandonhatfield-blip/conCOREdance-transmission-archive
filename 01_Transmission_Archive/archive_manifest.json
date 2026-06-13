@@ -375,6 +375,29 @@
       "path": "2026/CC-TX-2026-05-28-005/transmission.html",
       "metadata_path": "2026/CC-TX-2026-05-28-005/metadata.json",
       "authorized_by": "Neal / Brandon Hatfield, LPC"
+    },
+    {
+      "id": "CC-TX-2026-06-13-001",
+      "title": "Native Alpha Functional Workspace Expansion",
+      "date": "2026-06-13",
+      "status": "Active Canon",
+      "type": "Implementation Log",
+      "layer": "Native macOS Alpha / Clinical Workflow",
+      "from": "Cody Valle",
+      "to": "Neal and Gregory",
+      "authorized_by": "Neal / Brandon Hatfield, LPC",
+      "summary": "Cody advanced the native macOS prototype from a visually strong shell into a broader working alpha, connecting core sidebar areas to real vault-derived workflows and verifying the build with 57 passing tests.",
+      "tags": [
+        "alpha",
+        "swiftui",
+        "clinical-workflow",
+        "vault-store",
+        "workspace-navigation",
+        "testing",
+        "local-first"
+      ],
+      "path": "2026/CC-TX-2026-06-13-001/transmission.html",
+      "metadata_path": "2026/CC-TX-2026-06-13-001/metadata.json"
     }
   ]
 }
