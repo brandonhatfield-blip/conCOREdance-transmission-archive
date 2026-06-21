@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Enter the ConCOREdance Transmission Archive, product vision, design doctrine, project team, and visual asset library." />
+<title>ConCOREdance — Archive Gateway</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23050914' stroke='%23e7ad67' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23e7ad67'/%3E%3C/svg%3E" />
+<style>
+:root{
+  --bg:#050914;--panel:rgba(7,14,26,.78);--gold:#e7ad67;--gold2:#f0c892;
+  --cream:#f4efe8;--muted:#b8bec8;--teal:#65b7be;--line:rgba(231,173,103,.44);
+  --soft:rgba(255,255,255,.12);--shadow:rgba(0,0,0,.52);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;min-height:100vh;color:var(--cream);background:var(--bg);
+  font-family:Inter,Avenir Next,Avenir,Segoe UI,system-ui,sans-serif;
+}
+.vista{
+  position:fixed;inset:0;z-index:-2;
+  background:
+    linear-gradient(to bottom,rgba(5,9,20,.04),rgba(5,9,20,.96)),
+    url("01_Transmission_Archive/assets/transmission_visual_standard.png") center top/cover no-repeat;
+  filter:saturate(.94) contrast(1.04) brightness(.72);
+}
+.vista:after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 73% 20%,rgba(101,183,190,.20),transparent 28%),
+    radial-gradient(circle at 24% 78%,rgba(231,173,103,.18),transparent 30%),
+    linear-gradient(90deg,rgba(5,9,20,.90),rgba(5,9,20,.50) 54%,rgba(5,9,20,.72));
+}
+.page{width:min(1180px,calc(100vw - 32px));margin:0 auto;padding:22px 0 54px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0 22px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--cream)}
+.sigil{width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;position:relative}
+.sigil:before,.sigil:after{content:"";position:absolute;inset:9px;border:1px solid rgba(231,173,103,.70);border-radius:50%}
+.sigil:after{inset:19px;background:var(--gold);box-shadow:0 0 18px rgba(231,173,103,.65)}
+.brand-copy strong{display:block;font-family:Cormorant Garamond,Georgia,serif;font-size:26px;font-weight:400}
+.brand-copy span{display:block;margin-top:3px;color:var(--gold2);font-size:9px;letter-spacing:.28em;text-transform:uppercase}
+.toplink{color:var(--gold2);font-size:11px;letter-spacing:.15em;text-transform:uppercase;text-decoration:none}
+.hero{
+  display:grid;grid-template-columns:1.03fr .97fr;min-height:660px;overflow:hidden;
+  border:1px solid var(--line);border-radius:20px;background:var(--panel);
+  backdrop-filter:blur(18px);box-shadow:0 34px 100px var(--shadow);
+}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:64px 58px}
+.hero h1{
+  margin:0 0 24px;font-family:Cormorant Garamond,Georgia,serif;
+  font-size:clamp(58px,7vw,94px);font-weight:300;line-height:.91;letter-spacing:-.04em;
+}
+.lede{max-width:650px;margin:0 0 34px;color:rgba(244,239,232,.84);font-size:19px;line-height:1.66}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px}
+.button{
+  display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;
+  border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--cream);
+  background:rgba(231,173,103,.10);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  transition:.2s ease;
+}
+.button.primary{
+  background:linear-gradient(135deg,rgba(231,173,103,.38),rgba(101,183,190,.18));
+  border-color:rgba(231,173,103,.75);box-shadow:0 0 28px rgba(231,173,103,.12);
+}
+.button:hover,.gateway:hover{transform:translateY(-2px);border-color:var(--gold)}
+.promise{padding-top:24px;border-top:1px solid var(--soft);color:var(--muted);font-size:14px;line-height:1.55}
+.promise strong{color:var(--gold2);font-weight:600}
+.hero-art{
+  position:relative;min-height:580px;
+  background:
+    linear-gradient(90deg,rgba(5,9,20,.54),rgba(5,9,20,.05) 42%,rgba(5,9,20,.30)),
+    url("01_Transmission_Archive/assets/archive_navigator_gateway.png") center/cover no-repeat;
+}
+.hero-art:after{
+  content:"Archive Gateway";position:absolute;right:30px;bottom:30px;
+  color:rgba(244,239,232,.72);font-size:10px;letter-spacing:.28em;text-transform:uppercase;
+}
+.gateways{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.gateway{
+  min-height:190px;padding:22px;border:1px solid var(--soft);border-radius:16px;
+  background:rgba(7,14,26,.76);color:var(--cream);text-decoration:none;
+  backdrop-filter:blur(14px);transition:.2s ease;
+}
+.gateway .number{display:block;color:var(--gold);font-size:12px;letter-spacing:.15em;margin-bottom:30px}
+.gateway h2{margin:0 0 10px;font-family:Cormorant Garamond,Georgia,serif;font-size:30px;font-weight:400}
+.gateway p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+.footer{display:flex;justify-content:space-between;gap:20px;padding:28px 4px 0;color:var(--muted);font-size:12px}
+.footer a{color:var(--gold2)}
+@media(max-width:930px){
+  .hero{grid-template-columns:1fr}.hero-copy{padding:48px 36px}.hero-art{min-height:390px}
+  .gateways{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .page{width:min(100% - 22px,1180px)}.topbar{align-items:flex-start}
+  .hero-copy{padding:40px 24px}.hero h1{font-size:56px}.hero-art{min-height:300px}
+  .gateways{grid-template-columns:1fr}.gateway{min-height:160px}
+  .footer{display:block;line-height:1.7}
+}
+</style>
+</head>
+<body>
+<div class="vista"></div>
+<main class="page">
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="sigil" aria-hidden="true"></span>
+      <span class="brand-copy"><strong>ConCOREdance</strong><span>Harmony in Complexity</span></span>
+    </a>
+    <a class="toplink" href="01_Transmission_Archive/product/">Product Vision</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Continuity deserves a place to live.</h1>
+      <p class="lede">Enter the living record of ConCOREdance: product doctrine, implementation history, visual direction, and the decisions shaping a therapist-owned clinical records vault.</p>
+      <div class="actions">
+        <a class="button primary" href="01_Transmission_Archive/">Enter Transmission Archive</a>
+        <a class="button" href="01_Transmission_Archive/product/">Explore the Product</a>
+      </div>
+      <p class="promise"><strong>Current canon:</strong> 19 transmissions spanning product architecture, clinical workflow, design doctrine, Continuity Intelligence, and Print to ConCOREdance.</p>
+    </div>
+    <div class="hero-art" role="img" aria-label="Illuminated ConCOREdance archive gateway"></div>
+  </section>
+
+  <nav class="gateways" aria-label="ConCOREdance destinations">
+    <a class="gateway" href="01_Transmission_Archive/">
+      <span class="number">01</span><h2>Archive</h2>
+      <p>Read the complete chronological transmission record and current active canon.</p>
+    </a>
+    <a class="gateway" href="01_Transmission_Archive/product/">
+      <span class="number">02</span><h2>Product</h2>
+      <p>Explore the therapist-owned vault, roadmap, and signature product promises.</p>
+    </a>
+    <a class="gateway" href="01_Transmission_Archive/team/">
+      <span class="number">03</span><h2>Team</h2>
+      <p>Meet the collaborators carrying clinical vision, doctrine, and implementation.</p>
+    </a>
+    <a class="gateway" href="01_Transmission_Archive/doctrine/">
+      <span class="number">04</span><h2>Doctrine</h2>
+      <p>Understand the principles governing continuity, ownership, privacy, and design.</p>
+    </a>
+  </nav>
+
+  <footer class="footer">
+    <span>ConCOREdance · Therapist-owned clinical memory</span>
+    <span><a href="01_Transmission_Archive/assets/">Visual Asset Library</a></span>
+  </footer>
+</main>
+</body>
+</html>
