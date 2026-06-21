@@ -1,0 +1,24 @@
+{
+  "id": "CC-TX-2026-06-21-001",
+  "title": "Print to ConCOREdance \u2014 Universal Clinical Document Import",
+  "date": "2026-06-21",
+  "status": "Active Canon",
+  "type": "Product Doctrine / Implementation Log",
+  "layer": "Document Import / Portability",
+  "from": "Cody Valle",
+  "to": "Brandon Hatfield, LPC and Gregory P. Turing",
+  "authorized_by": "Brandon Hatfield, LPC",
+  "summary": "ConCOREdance establishes Print to ConCOREdance as a signature universal import feature, allowing therapists to receive PDFs from browsers, EHRs, and other printable macOS applications into a fast encrypted review tray.",
+  "tags": [
+    "print-to-concoredance",
+    "document-import",
+    "portability",
+    "migration",
+    "macos",
+    "pdf",
+    "encryption",
+    "therapist-control"
+  ],
+  "path": "2026/CC-TX-2026-06-21-001/transmission.html",
+  "metadata_path": "2026/CC-TX-2026-06-21-001/metadata.json"
+}
