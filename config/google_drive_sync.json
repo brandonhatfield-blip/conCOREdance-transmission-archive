@@ -1,0 +1,28 @@
+{
+  "source_root": "/Users/neal/Library/CloudStorage/GoogleDrive-brandon.hatfield@seekingharmony.net/My Drive/ConCOREdance",
+  "repo_root": "/Volumes/Disk 2/Local Folder/conCOREdance-transmission-archive-github",
+  "mappings": [
+    {
+      "source": "01_Transmission_Archive",
+      "target": "01_Transmission_Archive"
+    },
+    {
+      "source": "README_UPLOAD_INSTRUCTIONS.md",
+      "target": "README_UPLOAD_INSTRUCTIONS.md"
+    }
+  ],
+  "exclude_names": [
+    ".DS_Store",
+    "Icon\r"
+  ],
+  "exclude_prefixes": [
+    "._",
+    ".tmp/",
+    ".localized"
+  ],
+  "update_policy": "baseline_then_drive_changes",
+  "delete_missing": false,
+  "manifest_path": "data/google_drive_sync_manifest.json",
+  "report_dir": "/Volumes/Disk 2/Local Folder/ConCOREdance/04_Sync_Reports",
+  "commit_message_prefix": "Sync Google Drive ConCOREdance archive"
+}

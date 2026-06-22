@@ -1,0 +1,134 @@
+{
+  "delete_missing": false,
+  "file_count": 18,
+  "files": [
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "1b3b7caa587fcc97285f4accd041bd2a2d6c69231a232ea152ce5b2585559408",
+      "size": 434,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-001/metadata.json",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-001/metadata.json"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "0577e94e7c52eaddf03da3b69afff370d553aed36f7cbc76385c6b95e50c334d",
+      "size": 9943,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-001/transmission.html",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-001/transmission.html"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "5b87a15c903e420d85d163cecdb2d4113828bdc7c9c0667220c3f0d7fa398b74",
+      "size": 468,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-002/metadata.json",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-002/metadata.json"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "d1713fb0ae76138733d4b30d5008167a8cf7a943d7185ce94b332a394806f9d7",
+      "size": 10048,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-002/transmission.html",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-002/transmission.html"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "a7c4dc6e0b4677a42ab3bfc46b410ee510f529b92f2822433c32df1972d412f1",
+      "size": 468,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-003/metadata.json",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-003/metadata.json"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "7740ec47ab64a2898d741233304046edc1424c1f7f04c65e0c37ec2aafb3e4a7",
+      "size": 10332,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-003/transmission.html",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-24-003/transmission.html"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "01696e08df20c5b23a052368d319611262508cf17f7bfd2be4216ce20a7c103e",
+      "size": 471,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-26-001/metadata.json",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-26-001/metadata.json"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "e8095ada86b9c41f9582a0f94ae76840db517fe3645bcddb2d3c56cbcc4cb644",
+      "size": 11096,
+      "source_path": "01_Transmission_Archive/2026/CC-TX-2026-05-26-001/transmission.html",
+      "target_path": "01_Transmission_Archive/2026/CC-TX-2026-05-26-001/transmission.html"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "aa31696af6ac12c7f98cca9f0bf6a8e432c58e2f517f2441e71e473e98e63e58",
+      "size": 2905,
+      "source_path": "01_Transmission_Archive/archive_manifest.json",
+      "target_path": "01_Transmission_Archive/archive_manifest.json"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "34c55070609dd298fb4a84d079301ebf89d45bf4958548fc62e7abc692ad0c4f",
+      "size": 345601,
+      "source_path": "01_Transmission_Archive/assets/mockup_design_system.jpeg",
+      "target_path": "01_Transmission_Archive/assets/mockup_design_system.jpeg"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "2a5f494beeb1d5335bd3343fb74fa61a3bcd30b685f9b6d16f9ba083cf555a02",
+      "size": 379143,
+      "source_path": "01_Transmission_Archive/assets/mockup_light_mode.jpeg",
+      "target_path": "01_Transmission_Archive/assets/mockup_light_mode.jpeg"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "0366189cb0baaa8c50fc2462960f35d0fd41e92bc3f99703f17d4c60b75e9d6a",
+      "size": 433780,
+      "source_path": "01_Transmission_Archive/assets/mockup_shell_dark.jpeg",
+      "target_path": "01_Transmission_Archive/assets/mockup_shell_dark.jpeg"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "1094cc066552921abf2daf64ad4981ec9983043dd70393a96194f1f4f1d183c5",
+      "size": 784749,
+      "source_path": "01_Transmission_Archive/assets/onesheet_feature_list.jpeg",
+      "target_path": "01_Transmission_Archive/assets/onesheet_feature_list.jpeg"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "27192c6ccaf695895de43a3ee9b36a11795b2f5c0b1821b6de1ecf1cf1c1092d",
+      "size": 659051,
+      "source_path": "01_Transmission_Archive/assets/product_poster.jpeg",
+      "target_path": "01_Transmission_Archive/assets/product_poster.jpeg"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "0886b917a64c5533be48983df39e8df4c5398f3fcaaed2121b8a59f274cbf20e",
+      "size": 1808640,
+      "source_path": "01_Transmission_Archive/assets/template_instruction_mockup.png",
+      "target_path": "01_Transmission_Archive/assets/template_instruction_mockup.png"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "c928b9a32af23f4d3571959806c419d6769d37e97f77affe66d704c219347d68",
+      "size": 1845356,
+      "source_path": "01_Transmission_Archive/assets/transmission_visual_standard.png",
+      "target_path": "01_Transmission_Archive/assets/transmission_visual_standard.png"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "e466cb7bd22765c1fe66a1ab23f0522c49bc778a96d3f10dc72bf5102765b27b",
+      "size": 11441,
+      "source_path": "01_Transmission_Archive/index.html",
+      "target_path": "01_Transmission_Archive/index.html"
+    },
+    {
+      "modified_time": "2026-05-26T19:41:54+00:00",
+      "sha256": "f9bacf9a0822e712b0e067f18433e6c99b0f1577871ef2d902e404cf147d7817",
+      "size": 480,
+      "source_path": "README_UPLOAD_INSTRUCTIONS.md",
+      "target_path": "README_UPLOAD_INSTRUCTIONS.md"
+    }
+  ],
+  "repo_root": "/Volumes/Disk 2/Local Folder/conCOREdance-transmission-archive-github",
+  "source_root": "/Users/neal/Library/CloudStorage/GoogleDrive-brandon.hatfield@seekingharmony.net/My Drive/ConCOREdance"
+}

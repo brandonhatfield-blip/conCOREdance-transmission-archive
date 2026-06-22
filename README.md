@@ -34,6 +34,10 @@ For the step-by-step issue review, canonization, and completion workflow, see:
 
 [OPERATING_GUIDE.md](OPERATING_GUIDE.md)
 
+For the proposed Google Drive to GitHub synchronization layer, see:
+
+[docs/GOOGLE_DRIVE_GITHUB_SYNC_ARCHITECTURE.md](docs/GOOGLE_DRIVE_GITHUB_SYNC_ARCHITECTURE.md)
+
 ---
 
 # Repository Structure

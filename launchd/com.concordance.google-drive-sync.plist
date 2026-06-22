@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.concordance.google-drive-sync</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>REPO="/Volumes/Disk 2/Local Folder/conCOREdance-transmission-archive-github"; cd "$REPO" &amp;&amp; echo "== $(date -u '+%Y-%m-%dT%H:%M:%SZ') local Google Drive sync ==" &amp;&amp; /usr/bin/python3 scripts/local_google_drive_sync.py --commit</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>1800</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/neal/Library/Logs/com.concordance.google-drive-sync.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/neal/Library/Logs/com.concordance.google-drive-sync.stderr.log</string>
+</dict>
+</plist>
