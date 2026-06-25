@@ -32,8 +32,12 @@ It maps:
 
 | Drive path | Repo path |
 | --- | --- |
+| `archive` | `archive` |
 | `01_Transmission_Archive` | `01_Transmission_Archive` |
 | `README_UPLOAD_INSTRUCTIONS.md` | `README_UPLOAD_INSTRUCTIONS.md` |
+
+`archive` is the clean public URL mirror used by `https://www.concoredance.com/archive/`.
+`01_Transmission_Archive` remains as a legacy compatibility shelf for older archive links.
 
 Deletes are disabled by default. If a file is missing from Drive, the runner does not remove the GitHub copy.
 

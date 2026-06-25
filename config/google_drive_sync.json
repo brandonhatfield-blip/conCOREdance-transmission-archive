@@ -3,6 +3,10 @@
   "repo_root": "/Volumes/Disk 2/Local Folder/conCOREdance-transmission-archive-github",
   "mappings": [
     {
+      "source": "archive",
+      "target": "archive"
+    },
+    {
       "source": "01_Transmission_Archive",
       "target": "01_Transmission_Archive"
     },
