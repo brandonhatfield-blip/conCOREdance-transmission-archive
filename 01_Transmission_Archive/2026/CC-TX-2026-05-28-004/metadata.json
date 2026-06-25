@@ -1,24 +1,15 @@
-{
-  "id": "CC-TX-2026-05-28-004",
-  "title": "Pass 4 \u2014 Copy to Clipboard and .txt Export from GeneratedDraftPreview",
-  "date": "2026-05-28",
-  "status": "Active Canon",
-  "type": "Implementation Log",
-  "layer": "Session Workspace / Document Export",
-  "from": "Paula Accord",
-  "to": "Cody Valle",
-  "summary": "Pass 4 added copy-to-clipboard and `.txt` file export directly from the `GeneratedDraftPreview` card in the active session workspace. A new `exportNoteDraft(for:)` method on VaultStore handles the file write, following the `exportBackup()` pattern. A Copy button uses `NSPasteboard` with a 1.8-second \"Copied\" confirmation state. Two new XCTest methods cover the observable store side effects of the export path. Cody verified the pass with `swift build` and `Tools/run-tests.sh`; 48 tests passed with 0 failures.",
-  "tags": [
-    "export",
-    "clipboard",
-    "nspasteboard",
-    "vault-store",
-    "views",
-    "xctest",
-    "swift",
-    "generated-draft-preview"
-  ],
-  "path": "2026/CC-TX-2026-05-28-004/transmission.html",
-  "metadata_path": "2026/CC-TX-2026-05-28-004/metadata.json",
-  "authorized_by": "Brandon Hatfield, LPC"
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=../../archive/2026/CC-TX-2026-05-28-004/metadata.json" />
+<link rel="canonical" href="../../archive/2026/CC-TX-2026-05-28-004/metadata.json" />
+<title>Redirecting to ConCOREdance Archive</title>
+<style>body{font-family:system-ui,sans-serif;margin:3rem;line-height:1.5;background:#050914;color:#f4efe8}a{color:#f0c892}</style>
+</head>
+<body>
+<p>This archive path has moved to <a href="../../archive/2026/CC-TX-2026-05-28-004/metadata.json">../../archive/2026/CC-TX-2026-05-28-004/metadata.json</a>.</p>
+<script>location.replace('../../archive/2026/CC-TX-2026-05-28-004/metadata.json');</script>
+</body>
+</html>

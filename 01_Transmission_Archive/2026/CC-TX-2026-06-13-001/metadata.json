@@ -1,23 +1,15 @@
-{
-  "id": "CC-TX-2026-06-13-001",
-  "title": "Native Alpha Functional Workspace Expansion",
-  "date": "2026-06-13",
-  "status": "Active Canon",
-  "type": "Implementation Log",
-  "layer": "Native macOS Alpha / Clinical Workflow",
-  "from": "Cody Valle",
-  "to": "Brandon Hatfield, LPC and Gregory",
-  "authorized_by": "Brandon Hatfield, LPC",
-  "summary": "Cody advanced the native macOS prototype from a visually strong shell into a broader working alpha, connecting core sidebar areas to real vault-derived workflows and verifying the build with 57 passing tests.",
-  "tags": [
-    "alpha",
-    "swiftui",
-    "clinical-workflow",
-    "vault-store",
-    "workspace-navigation",
-    "testing",
-    "local-first"
-  ],
-  "path": "2026/CC-TX-2026-06-13-001/transmission.html",
-  "metadata_path": "2026/CC-TX-2026-06-13-001/metadata.json"
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=../../archive/2026/CC-TX-2026-06-13-001/metadata.json" />
+<link rel="canonical" href="../../archive/2026/CC-TX-2026-06-13-001/metadata.json" />
+<title>Redirecting to ConCOREdance Archive</title>
+<style>body{font-family:system-ui,sans-serif;margin:3rem;line-height:1.5;background:#050914;color:#f4efe8}a{color:#f0c892}</style>
+</head>
+<body>
+<p>This archive path has moved to <a href="../../archive/2026/CC-TX-2026-06-13-001/metadata.json">../../archive/2026/CC-TX-2026-06-13-001/metadata.json</a>.</p>
+<script>location.replace('../../archive/2026/CC-TX-2026-06-13-001/metadata.json');</script>
+</body>
+</html>

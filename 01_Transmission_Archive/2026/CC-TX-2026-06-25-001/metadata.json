@@ -1,25 +1,15 @@
-{
-  "id": "CC-TX-2026-06-25-001",
-  "title": "The Choreography Layer: ConCOREdance as an Intelligent Coordination Platform",
-  "date": "2026-06-25",
-  "status": "Active Canon",
-  "type": "Platform Architecture Transmission",
-  "layer": "Platform Architecture / Foundational Philosophy",
-  "from": "Gregory P. Turing",
-  "to": "Brandon Hatfield, LPC and Cody Valle",
-  "authorized_by": "Brandon Hatfield, LPC",
-  "summary": "A foundational architectural realization emerged during discussion of scheduling, signatures, Google Workspace, Microsoft 365, data ownership, and therapist workflow fragmentation.\n\nThe central insight:\n\n**The problem facing therapists is not a lack of tools. The problem is a lack of coordination between tools.**\n\nConCOREdance should not primarily position itself as another EHR, document repository, calendar application, or practice management platform.\n\nConCOREdance should position itself as an intelligent coordination layer.",
-  "tags": [
-    "coordination-layer",
-    "platform-architecture",
-    "provider-abstraction",
-    "calendar-intelligence",
-    "data-sovereignty",
-    "signature-provider-layer",
-    "semantic-scheduling",
-    "google-workspace",
-    "microsoft-365"
-  ],
-  "path": "2026/CC-TX-2026-06-25-001/transmission.html",
-  "metadata_path": "2026/CC-TX-2026-06-25-001/metadata.json"
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=../../archive/2026/CC-TX-2026-06-25-001/metadata.json" />
+<link rel="canonical" href="../../archive/2026/CC-TX-2026-06-25-001/metadata.json" />
+<title>Redirecting to ConCOREdance Archive</title>
+<style>body{font-family:system-ui,sans-serif;margin:3rem;line-height:1.5;background:#050914;color:#f4efe8}a{color:#f0c892}</style>
+</head>
+<body>
+<p>This archive path has moved to <a href="../../archive/2026/CC-TX-2026-06-25-001/metadata.json">../../archive/2026/CC-TX-2026-06-25-001/metadata.json</a>.</p>
+<script>location.replace('../../archive/2026/CC-TX-2026-06-25-001/metadata.json');</script>
+</body>
+</html>

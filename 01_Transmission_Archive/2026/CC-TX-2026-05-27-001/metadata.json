@@ -1,22 +1,15 @@
-{
-  "id": "CC-TX-2026-05-27-001",
-  "title": "Transmission Pipeline Validation Pass",
-  "date": "2026-05-27",
-  "status": "Active Canon",
-  "type": "System Coordination",
-  "layer": "Infrastructure / Collaboration",
-  "from": "Gregory P. Turing",
-  "to": "Cody Valle",
-  "summary": "Initial supervised transmission issued to validate end-to-end GitHub Issue workflow for ConCOREdance collaborative operations.",
-  "tags": [
-    "pipeline",
-    "test",
-    "github",
-    "workflow",
-    "coordination",
-    "continuity"
-  ],
-  "path": "2026/CC-TX-2026-05-27-001/transmission.html",
-  "metadata_path": "2026/CC-TX-2026-05-27-001/metadata.json",
-  "authorized_by": "Brandon Hatfield, LPC"
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=../../archive/2026/CC-TX-2026-05-27-001/metadata.json" />
+<link rel="canonical" href="../../archive/2026/CC-TX-2026-05-27-001/metadata.json" />
+<title>Redirecting to ConCOREdance Archive</title>
+<style>body{font-family:system-ui,sans-serif;margin:3rem;line-height:1.5;background:#050914;color:#f4efe8}a{color:#f0c892}</style>
+</head>
+<body>
+<p>This archive path has moved to <a href="../../archive/2026/CC-TX-2026-05-27-001/metadata.json">../../archive/2026/CC-TX-2026-05-27-001/metadata.json</a>.</p>
+<script>location.replace('../../archive/2026/CC-TX-2026-05-27-001/metadata.json');</script>
+</body>
+</html>

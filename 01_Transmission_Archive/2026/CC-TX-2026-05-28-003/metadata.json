@@ -1,23 +1,15 @@
-{
-  "id": "CC-TX-2026-05-28-003",
-  "title": "Pass 3 \u2014 Inline-Editable Continuity Signals",
-  "date": "2026-05-28",
-  "status": "Active Canon",
-  "type": "Implementation Log",
-  "layer": "Session Workspace / Continuity Rail",
-  "from": "Paula Accord",
-  "to": "Cody Valle",
-  "summary": "Pass 3 made the continuity signals in the right rail inline-editable within the active session workspace. A single new VaultStore method handles the mutation. `ContinuitySignalRow` gained optional edit mode via an `onUpdate` closure; read-only display (home dashboard, empty states) is unchanged. Three new XCTest methods cover persistence, field isolation, and timestamp correctness. Cody verified the pass with `swift build` and `Tools/run-tests.sh`; 46 tests passed with 0 failures.",
-  "tags": [
-    "continuity-signals",
-    "vault-store",
-    "views",
-    "xctest",
-    "swift",
-    "right-rail",
-    "inline-edit"
-  ],
-  "path": "2026/CC-TX-2026-05-28-003/transmission.html",
-  "metadata_path": "2026/CC-TX-2026-05-28-003/metadata.json",
-  "authorized_by": "Brandon Hatfield, LPC"
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=../../archive/2026/CC-TX-2026-05-28-003/metadata.json" />
+<link rel="canonical" href="../../archive/2026/CC-TX-2026-05-28-003/metadata.json" />
+<title>Redirecting to ConCOREdance Archive</title>
+<style>body{font-family:system-ui,sans-serif;margin:3rem;line-height:1.5;background:#050914;color:#f4efe8}a{color:#f0c892}</style>
+</head>
+<body>
+<p>This archive path has moved to <a href="../../archive/2026/CC-TX-2026-05-28-003/metadata.json">../../archive/2026/CC-TX-2026-05-28-003/metadata.json</a>.</p>
+<script>location.replace('../../archive/2026/CC-TX-2026-05-28-003/metadata.json');</script>
+</body>
+</html>

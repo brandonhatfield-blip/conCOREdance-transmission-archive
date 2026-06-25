@@ -1,23 +1,15 @@
-{
-  "id": "CC-TX-2026-05-27-003",
-  "title": "Next Programming Pass \u2014 Atmospheric Continuity & Adaptive Panels",
-  "date": "2026-05-27",
-  "status": "Active Canon",
-  "type": "Programming Directive",
-  "layer": "Visual Shell / Interaction Architecture",
-  "from": "Gregory P. Turing",
-  "to": "Cody Valle",
-  "summary": "Directive for the next implementation pass focusing on atmospheric cohesion, adaptive content expansion behavior, and refinement of the ConCOREdance shell identity.",
-  "tags": [
-    "swiftui",
-    "ui",
-    "layout",
-    "atmosphere",
-    "continuity",
-    "adaptive-panels",
-    "ux"
-  ],
-  "path": "2026/CC-TX-2026-05-27-003/transmission.html",
-  "metadata_path": "2026/CC-TX-2026-05-27-003/metadata.json",
-  "authorized_by": "Brandon Hatfield, LPC"
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=../../archive/2026/CC-TX-2026-05-27-003/metadata.json" />
+<link rel="canonical" href="../../archive/2026/CC-TX-2026-05-27-003/metadata.json" />
+<title>Redirecting to ConCOREdance Archive</title>
+<style>body{font-family:system-ui,sans-serif;margin:3rem;line-height:1.5;background:#050914;color:#f4efe8}a{color:#f0c892}</style>
+</head>
+<body>
+<p>This archive path has moved to <a href="../../archive/2026/CC-TX-2026-05-27-003/metadata.json">../../archive/2026/CC-TX-2026-05-27-003/metadata.json</a>.</p>
+<script>location.replace('../../archive/2026/CC-TX-2026-05-27-003/metadata.json');</script>
+</body>
+</html>
