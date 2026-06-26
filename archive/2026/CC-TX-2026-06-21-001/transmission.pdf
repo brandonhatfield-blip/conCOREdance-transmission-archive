@@ -1,0 +1,166 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2679 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Print to ConCOREdance - Universal Clinical Document Import) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-06-21-001 | 2026-06-21 | Active Canon) Tj
+0 -16 Td
+(Layer: Document Import / Portability) Tj
+0 -16 Td
+(From: Cody Valle) Tj
+0 -16 Td
+(To: Brandon Hatfield, LPC and Gregory P. Turing) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(ConCOREdance establishes Print to ConCOREdance as a signature universal import feature,) Tj
+0 -17 Td
+(allowing therapists to receive PDFs from browsers, EHRs, and other printable macOS) Tj
+0 -17 Td
+(applications into a fast encrypted review tray.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(Brandon identified a foundational portability insight: instead of requiring a custom) Tj
+0 -17 Td
+(integration with every EHR, ConCOREdance can use the printing capability those systems) Tj
+0 -17 Td
+(already share.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Print to ConCOREdance is therefore established as a signature product feature and universal) Tj
+0 -17 Td
+(fallback migration path. A therapist should be able to print from a browser, EHR, office) Tj
+0 -17 Td
+(application, or other macOS software; route the resulting PDF into ConCOREdance; confirm the) Tj
+0 -17 Td
+(client, category, and document date; and file the preserved original.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The first native prototype now includes a Document Import workspace supporting PDF file) Tj
+0 -17 Td
+(selection, drag-and-drop, and files opened with ConCOREdance. Incoming originals are) Tj
+0 -17 Td
+(encrypted into a separate attachment store, indexed in the encrypted vault, checked for) Tj
+0 -17 Td
+(duplicate content by SHA-256, and held in an awaiting-review state until the therapist) Tj
+0 -17 Td
+(explicitly files them.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The intended macOS distribution path will add ConCOREdance to the Print dialog's PDF) Tj
+0 -17 Td
+(workflows so the same import review tray can receive documents directly from printing. The) Tj
+0 -17 Td
+(supported system path is preferred over a custom printer driver or raw spool interception.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Speed is part of the doctrine. The product target is one document in under 15 seconds and an) Tj
+0 -17 Td
+(ordinary client chart in under five minutes. The import experience must not recreate vendor) Tj
+0 -17 Td
+(captivity with prettier surfaces.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Print to ConCOREdance is a signature public-facing product feature.) Tj
+0 -17 Td
+(- Printing, Open With, drag-and-drop, and file selection feed one encrypted import) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 954 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(review tray.) Tj
+0 -17 Td
+(- Imported originals are preserved unchanged before encryption.) Tj
+0 -17 Td
+(- Duplicate content is detected before a second encrypted copy is created.) Tj
+0 -17 Td
+(- Nothing is permanently filed without therapist confirmation.) Tj
+0 -17 Td
+(- The supported macOS PDF workflow is preferred over custom printer-driver or raw spool) Tj
+0 -17 Td
+(interception.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Add the packaged macOS PDF Services installation path.) Tj
+0 -17 Td
+(- Add PDF text extraction and document-date suggestions.) Tj
+0 -17 Td
+(- Add client and category suggestions with explicit therapist confirmation.) Tj
+0 -17 Td
+(- Add grouped multi-document chart review optimized for completion in under five) Tj
+0 -17 Td
+(minutes.) Tj
+0 -17 Td
+(- Surface filed documents on the client timeline and include them selectively in export) Tj
+0 -17 Td
+(packets.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000003054 00000 n 
+0000003180 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4185
+%%EOF

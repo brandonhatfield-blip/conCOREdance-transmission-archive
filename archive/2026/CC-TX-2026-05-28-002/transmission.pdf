@@ -1,0 +1,239 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2452 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Pass 1 - Test Infrastructure and Verification Constraint) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-05-28-002 | 2026-05-28 | Active Canon) Tj
+0 -16 Td
+(Layer: Testing / Archive Infrastructure) Tj
+0 -16 Td
+(From: Paula Accord) Tj
+0 -16 Td
+(To: Cody Valle) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(Pass 1 established the first Swift test infrastructure for ConCOREdance. A test target was) Tj
+0 -17 Td
+(added to Package.swift, VaultStore was made URL-injectable for isolation, VaultCryptoError) Tj
+0 -17 Td
+(gained Equatable conformance, and 38 XCTest methods were written across three suites. `swift) Tj
+0 -17 Td
+(build` passes; `swift test` is currently blocked in Cody's local environment because the) Tj
+0 -17 Td
+(selected Command Line Tools install cannot resolve XCTest and does not expose xcodebuild.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-05-28-002) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Issue:** Paula-originated log) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Following canonization of CC-TX-2026-05-28-001, Paula completed Pass 1 of the implementation) Tj
+0 -17 Td
+(queue: test infrastructure for vault persistence and draft save/load.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(`Package.swift` received a `.testTarget` declaration for `ConCOREdanceTests` pointing to) Tj
+0 -17 Td
+(`Tests/ConCOREdanceTests/`. This is the project's first test target.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(`VaultStore` was refactored minimally to support URL injection. A `vaultURL: URL` instance) Tj
+0 -17 Td
+(property replaced the direct use of the `Self.vaultURL` static in `save\(\)`, `unlock\(\)`,) Tj
+0 -17 Td
+(`vaultExists`, and `exportBackup\(\)`. An `init\(vaultURL: URL = VaultStore.defaultVaultURL\)`) Tj
+0 -17 Td
+(was added; the static was renamed `defaultVaultURL`. Production behavior is unchanged - the) Tj
+0 -17 Td
+(default argument preserves the original path. Test code passes a temporary URL in each test) Tj
+0 -17 Td
+(case and cleans up on tearDown.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(`VaultCryptoError` gained `Equatable` conformance so tests can assert specific error cases) Tj
+0 -17 Td
+(without pattern-matching boilerplate.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Three test files were written, totaling 38 XCTest methods:) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 3100 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(`VaultCryptoTests.swift` covers the encryption layer directly: round-trip correctness,) Tj
+0 -17 Td
+(wrong-password rejection with specific error type, uniqueness of ciphertext across calls) Tj
+0 -17 Td
+(using the same password and plaintext, and empty-data handling.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(`VaultStoreTests.swift` covers the full store lifecycle at MainActor: createVault unlocks) Tj
+0 -17 Td
+(the store and writes the vault file, short passwords are rejected, lock clears all published) Tj
+0 -17 Td
+(state, unlock with correct password restores session count, unlock with wrong password stays) Tj
+0 -17 Td
+(locked, updateSessionDraft persists across a lock/unlock cycle, draft status promotes to) Tj
+0 -17 Td
+(`.draft` when any field is filled, and the document artifact status advances to `.drafting`.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(`FixtureAndDraftTests.swift` covers ClinicalFixtureData integrity \(session count,) Tj
+0 -17 Td
+(modalities, pronouns, duration, chronological order, unique IDs, artifact initial status\)) Tj
+0 -17 Td
+(and generatedDraftPreview behavior \(empty fallback, client name presence, modality in) Tj
+0 -17 Td
+(preview, continuity signal titles, filled fields appear without fallback, whitespace-only) Tj
+0 -17 Td
+(fields still trigger fallback\).) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Separately, the live archive page was updated: CC-TX-2026-05-28-001 was missing from the) Tj
+0 -17 Td
+(index page, the transmission timeline, and the manifest. Its `transmission.html` and) Tj
+0 -17 Td
+(`metadata.json` were created, the index card was added at the top of the timeline, and the) Tj
+0 -17 Td
+(manifest count was updated from 12 to 13.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Cody verified the implementation files and ran `swift build` successfully. `swift test` did) Tj
+0 -17 Td
+(not run to completion because the active developer path is) Tj
+0 -17 Td
+(`/Library/Developer/CommandLineTools`; `xcrun --find xcodebuild` fails, and the SwiftPM test) Tj
+0 -17 Td
+(build cannot import XCTest. This is recorded as an environment/tooling constraint rather) Tj
+0 -17 Td
+(than a failed test assertion.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- VaultStore URL injection is the minimum refactor needed for test isolation; production) Tj
+0 -17 Td
+(path is unchanged.) Tj
+0 -17 Td
+(- Tests are grouped by layer: crypto, store lifecycle, fixture/draft - not by feature.) Tj
+0 -17 Td
+(- `@MainActor` is applied to the VaultStore test class, not per-method, since all) Tj
+0 -17 Td
+(VaultStore interactions require main-actor context.) Tj
+0 -17 Td
+(- No mocking of VaultCrypto - tests exercise the real 120,000-iteration KDF. Test suite) Tj
+0 -17 Td
+(will be slow by design; this is the intended behavior.) Tj
+0 -17 Td
+(- Archive HTML is maintained manually; no automation was added this pass.) Tj
+0 -17 Td
+(- Current local verification is build-only until Xcode/XCTest tooling is available.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Cody: rerun `swift test` after XCTest/xcodebuild tooling is available.) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 423 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(- Paula Pass 2: implement `completeSession\(_ id: UUID\)` on VaultStore - status) Tj
+0 -17 Td
+(`.complete`, artifact `.readyForReview`; add a restrained confirmation button in) Tj
+0 -17 Td
+(`ActiveSessionHeader`.) Tj
+0 -17 Td
+(- Paula Pass 3: inline-editable continuity signals in the right rail.) Tj
+0 -17 Td
+(- Paula Pass 4: copy-to-clipboard and `.txt` export from `GeneratedDraftPreview`.) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000203 00000 n 
+0000000329 00000 n 
+0000002833 00000 n 
+0000002959 00000 n 
+0000006111 00000 n 
+0000006237 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+6711
+%%EOF

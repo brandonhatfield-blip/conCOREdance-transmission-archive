@@ -1,0 +1,186 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2581 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Workflow Spine Implementation & Naming Correction Pass) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-05-27-007 | 2026-05-27 | Active Canon) Tj
+0 -16 Td
+(Layer: Product Architecture / Clinical Workflow) Tj
+0 -16 Td
+(From: Cody Valle) Tj
+0 -16 Td
+(To: Brandon Hatfield, LPC and Gregory) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(Completed the first functional workflow spine for the ConCOREdance SwiftUI prototype,) Tj
+0 -17 Td
+(including selectable fixture sessions, an active-session workspace, locally persisted draft) Tj
+0 -17 Td
+(state, generated progress-note preview, session-aware continuity rail, save-state) Tj
+0 -17 Td
+(visibility, and corrected ConCOREdance asset naming.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-05-27-007) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Issue:** Local implementation record) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Cody completed the implementation response to CC-TX-2026-05-27-006, moving ConCOREdance from) Tj
+0 -17 Td
+(atmospheric shell into functional clinical workflow architecture.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The home dashboard now renders safe fixture sessions as selectable work items. Selecting a) Tj
+0 -17 Td
+(session opens an active-session workspace with structured adaptive panels for clinical) Tj
+0 -17 Td
+(documentation. Draft edits are preserved locally through the vault store, and the generated) Tj
+0 -17 Td
+(progress-note preview updates from the active session fields.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The continuity rail now responds to the selected session rather than remaining purely) Tj
+0 -17 Td
+(decorative. Continuity signals, case context, and document preview content are tied to the) Tj
+0 -17 Td
+(current session state.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(A visible local save-state badge was added to the active-session header so the therapist can) Tj
+0 -17 Td
+(see that draft work is being preserved. Fixture data was moved into a dedicated provider so) Tj
+0 -17 Td
+(persistence logic remains cleaner and future seed/import boundaries are easier to establish.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(During review, a misspelled asset naming pattern was corrected from concordedance to) Tj
+0 -17 Td
+(conCOREdance across local project materials and the public archive. The project decision log) Tj
+0 -17 Td
+(now records ConCOREdance as the canonical product spelling for prose, UI, documentation, and) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1449 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(asset filenames.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Verification completed with swift build and fresh snapshot rendering for the dashboard,) Tj
+0 -17 Td
+(session workspace, shell, and vault gate.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Treat CC-TX-2026-05-27-006 as implemented at the first workflow-spine level.) Tj
+0 -17 Td
+(- Keep fixture data separate from vault persistence logic.) Tj
+0 -17 Td
+(- Surface local save status directly in the active-session workspace.) Tj
+0 -17 Td
+(- Correct misspelled ConCOREdance asset names rather than preserving accidental legacy.) Tj
+0 -17 Td
+(- Preserve screenshots as implementation evidence for the archive.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Review active-session right rail density during live documentation.) Tj
+0 -17 Td
+(- Add editable continuity signals.) Tj
+0 -17 Td
+(- Add complete-session and note-finalization flow.) Tj
+0 -17 Td
+(- Add copy/export controls for generated note drafts.) Tj
+0 -17 Td
+(- Decide when fixture sessions become seed data, imports, or demo-only previews.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Assets) Tj
+/F1 11 Tf
+0 -20 Td
+(- [Home Dashboard]\(../../archive/2026/CC-TX-2026-05-27-007/assets/conCOREdance-) Tj
+0 -17 Td
+(dashboard.png\)) Tj
+0 -17 Td
+(- [Active Session Workspace]\(../../archive/2026/CC-) Tj
+0 -17 Td
+(TX-2026-05-27-007/assets/conCOREdance-session.png\)) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000002956 00000 n 
+0000003082 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4583
+%%EOF

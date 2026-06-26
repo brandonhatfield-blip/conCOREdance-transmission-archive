@@ -1,0 +1,26 @@
+{
+  "id": "CC-TX-2026-06-26-002",
+  "title": "Portable Canon and Model-Agnostic Institutional Memory",
+  "date": "2026-06-26",
+  "status": "Active Canon",
+  "type": "Archive Architecture Directive",
+  "layer": "Transmission Archive / Institutional Memory",
+  "from": "Brandon Hatfield, LPC",
+  "to": "Gregory P. Turing, Cody Valle, Ada Vance, and future AI collaborators",
+  "authorized_by": "Brandon Hatfield, LPC",
+  "summary": "ConCOREdance distinguishes institutional memory from model memory by making each transmission portable across HTML, PDF, and AI-optimized Markdown, with CANON.md serving as the living model-agnostic index.",
+  "tags": [
+    "portable-canon",
+    "institutional-memory",
+    "ai-markdown",
+    "archive-pdf",
+    "model-agnostic",
+    "transmission-archive",
+    "architecture-council"
+  ],
+  "path": "2026/CC-TX-2026-06-26-002/",
+  "html_path": "2026/CC-TX-2026-06-26-002/index.html",
+  "pdf_path": "2026/CC-TX-2026-06-26-002/transmission.pdf",
+  "markdown_path": "transmissions/2026/CC-TX-2026-06-26-002.md",
+  "metadata_path": "2026/CC-TX-2026-06-26-002/metadata.json"
+}

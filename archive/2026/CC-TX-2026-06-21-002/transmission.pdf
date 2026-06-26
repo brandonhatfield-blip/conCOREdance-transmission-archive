@@ -1,0 +1,202 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2852 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Native Alpha Usability Pass - Import Continuity, Responsive Layout, and Secure Launch Direction) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-06-21-002 | 2026-06-21 | Review Requested) Tj
+0 -16 Td
+(Layer: Native macOS Alpha / Interaction Architecture) Tj
+0 -16 Td
+(From: Cody Valle) Tj
+0 -16 Td
+(To: Gregory P. Turing) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(The native alpha completed a hands-on usability pass that verified Print to ConCOREdance,) Tj
+0 -17 Td
+(clarified the imported-document lifecycle, repaired competing scroll regions, and exposed an) Tj
+0 -17 Td
+(unresolved design question about how the continuity and document-preview surface should) Tj
+0 -17 Td
+(behave at ordinary Mac window widths.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(Brandon tested the native alpha directly and confirmed that Print to ConCOREdance) Tj
+0 -17 Td
+(successfully delivers a PDF into the encrypted Import Review tray. The handoff now registers) Tj
+0 -17 Td
+(as a native macOS PDF service, accepts document-open events, queues incoming PDFs when the) Tj
+0 -17 Td
+(vault is locked, encrypts originals after unlock, checks duplicate content, and places the) Tj
+0 -17 Td
+(result into therapist review.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The test also revealed a discoverability problem: successful import did not make the) Tj
+0 -17 Td
+(document's location sufficiently obvious. The revised workflow automatically opens Import,) Tj
+0 -17 Td
+(displays an awaiting-review badge in the sidebar, highlights the newest document as just) Tj
+0 -17 Td
+(imported, and places filed documents under Documents inside the selected client record.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Brandon then identified serious scrolling and clipping friction. The original shell required) Tj
+0 -17 Td
+(more horizontal space than the default window provided and allowed multiple adjacent or) Tj
+0 -17 Td
+(nested scroll surfaces to compete for input. The shell now uses one primary vertical scroll) Tj
+0 -17 Td
+(surface per workspace, a unified scrolling sidebar, and responsive center content.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The responsive correction improved usability but created a design compromise. At ordinary) Tj
+0 -17 Td
+(window widths, the continuity rail and document preview currently integrate beneath the main) Tj
+0 -17 Td
+(workspace rather than remaining as a persistent third column. This is clearer and less) Tj
+0 -17 Td
+(clipped, but it weakens the immediate visibility of continuity signals and document) Tj
+0 -17 Td
+(previews.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Gregory's feedback is requested on the preferred interaction architecture:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Keep the continuity and document-preview surface integrated below the main workspace.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2187 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(- Preserve a permanent third column and accept a wider minimum window.) Tj
+0 -17 Td
+(- Convert the surface into a collapsible right-side inspector that remains available without) Tj
+0 -17 Td
+(compressing the writing workspace.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The current implementation direction favors the collapsible inspector, but no final design) Tj
+0 -17 Td
+(doctrine has been established.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The security roadmap also now includes Touch ID launch unlock and passkey-assisted) Tj
+0 -17 Td
+(enrollment or recovery. This must be a real cryptographic unlock: biometric success should) Tj
+0 -17 Td
+(release a Keychain or Secure Enclave-protected vault key rather than merely bypassing the) Tj
+0 -17 Td
+(password screen. Vault password and recovery-key access remain required fallbacks.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(All current automated tests pass: 79 tests, 0 failures.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Treat hands-on usability findings as product requirements rather than cosmetic polish.) Tj
+0 -17 Td
+(- Make the imported-document lifecycle visible before and after filing.) Tj
+0 -17 Td
+(- Keep one clear vertical scroll owner per primary workspace.) Tj
+0 -17 Td
+(- Preserve Touch ID and passkeys as secure key-release or recovery mechanisms, not) Tj
+0 -17 Td
+(decorative login gates.) Tj
+0 -17 Td
+(- Request Gregory's design direction before canonizing the final continuity-rail) Tj
+0 -17 Td
+(architecture.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Gregory to recommend integrated rail, permanent third column, or collapsible) Tj
+0 -17 Td
+(inspector.) Tj
+0 -17 Td
+(- Refine the selected continuity and document-preview pattern at common Mac window) Tj
+0 -17 Td
+(sizes.) Tj
+0 -17 Td
+(- Add PDF text extraction, client suggestions, and category suggestions after the) Tj
+0 -17 Td
+(interaction architecture stabilizes.) Tj
+0 -17 Td
+(- Design the production vault-key migration required for Touch ID, Keychain, Secure) Tj
+0 -17 Td
+(Enclave, password fallback, and recovery-key support.) Tj
+0 -17 Td
+(- Continue usability testing with synthetic data only.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000003227 00000 n 
+0000003353 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+5592
+%%EOF

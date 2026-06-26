@@ -1,0 +1,190 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2671 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Native Alpha Functional Workspace Expansion) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-06-13-001 | 2026-06-13 | Active Canon) Tj
+0 -16 Td
+(Layer: Native macOS Alpha / Clinical Workflow) Tj
+0 -16 Td
+(From: Cody Valle) Tj
+0 -16 Td
+(To: Brandon Hatfield, LPC and Gregory) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(Cody advanced the native macOS prototype from a visually strong shell into a broader working) Tj
+0 -17 Td
+(alpha, connecting core sidebar areas to real vault-derived workflows and verifying the build) Tj
+0 -17 Td
+(with 57 passing tests.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-06-13-001) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Issue:** Local implementation record) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The June 13 implementation pass focused on making the ConCOREdance alpha feel operational) Tj
+0 -17 Td
+(across the full workspace, not merely visually complete. The native SwiftUI shell now routes) Tj
+0 -17 Td
+(every primary sidebar section to a functional screen: Home, Session, Calendar, Clients,) Tj
+0 -17 Td
+(Notes, Plans, Tasks, Messages, Insights, Resources, and Settings.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The clinical data model gained client-session linkage through an optional session-level) Tj
+0 -17 Td
+(client identifier. VaultStore now supports session creation, client-specific session lookup,) Tj
+0 -17 Td
+(and persistence for linked sessions. The New Session flow can link a session to an existing) Tj
+0 -17 Td
+(client, while client detail screens now show related sessions and allow direct scheduling.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The dashboard and major workspaces were grounded in real vault state. Calendar now shows a) Tj
+0 -17 Td
+(working session queue and status counts. Notes reflects actual stored client notes. Plans) Tj
+0 -17 Td
+(organizes continuity signals into care-direction cards. Tasks derives an operational queue) Tj
+0 -17 Td
+(from scheduled sessions, draft work, ready-for-review artifacts, and client records that) Tj
+0 -17 Td
+(need baseline documentation.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Messages and Resources were added as pragmatic alpha surfaces rather than speculative) Tj
+0 -17 Td
+(integrations. Messages provides a local contact index and copyable follow-up language) Tj
+0 -17 Td
+(derived from session plans. Resources gathers the transmission archive, local project home,) Tj
+0 -17 Td
+(encrypted vault path, export folder, and export actions into one operational shelf. Settings) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1898 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(now exposes vault status, storage paths, export history, backup controls, lock controls, and) Tj
+0 -17 Td
+(recent audit activity.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The app also received a local build-and-run pathway for faster alpha review. The current) Tj
+0 -17 Td
+(build was verified with swift build and the project test runner. The test suite reports 57) Tj
+0 -17 Td
+(tests with 0 failures, covering the new session creation, client linkage, persistence,) Tj
+0 -17 Td
+(default continuity signals, and audit behavior.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Treat every visible primary sidebar item as accountable alpha surface area.) Tj
+0 -17 Td
+(- Derive Plans, Tasks, Messages, and Insights from existing vault state before) Tj
+0 -17 Td
+(introducing new storage structures.) Tj
+0 -17 Td
+(- Preserve local-first workflow boundaries for contacts, exports, vault location, and) Tj
+0 -17 Td
+(archive references.) Tj
+0 -17 Td
+(- Link sessions to clients with an optional client identifier while preserving existing) Tj
+0 -17 Td
+(fixture and unlinked-session behavior.) Tj
+0 -17 Td
+(- Keep the alpha visually atmospheric while prioritizing functional clinical navigation.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Review the full sidebar flow in the running app and identify the highest-friction) Tj
+0 -17 Td
+(clinical path.) Tj
+0 -17 Td
+(- Add a stronger search surface across clients, sessions, notes, and continuity signals.) Tj
+0 -17 Td
+(- Decide which alpha workspace should receive the next true write workflow beyond) Tj
+0 -17 Td
+(viewing and derived summaries.) Tj
+0 -17 Td
+(- Continue expanding test coverage around user-facing workspace state as the screens) Tj
+0 -17 Td
+(become more interactive.) Tj
+0 -17 Td
+(- Prepare a working alpha review sequence for Brandon Hatfield, LPC and Gregory.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000003046 00000 n 
+0000003172 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+5122
+%%EOF

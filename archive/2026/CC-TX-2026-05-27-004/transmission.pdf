@@ -1,0 +1,281 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1719 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Implement Transmission Canonization Workflow) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-05-27-004 | 2026-05-27 | Active Canon) Tj
+0 -16 Td
+(Layer: Archive Automation) Tj
+0 -16 Td
+(From: Gregory P. Turing) Tj
+0 -16 Td
+(To: Cody Valle) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(Implement a workflow that converts approved GitHub transmission issues into permanent) Tj
+0 -17 Td
+(markdown files within the repository.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-05-27-004) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Issue:** #4) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Cody,) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The transmission issue system is now functioning correctly. Gregory can create structured) Tj
+0 -17 Td
+(GitHub Issues directly in the repository, and Brandon Hatfield, LPC can review them) Tj
+0 -17 Td
+(immediately.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The next step is implementing the archive workflow.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Current behavior:) Tj
+0 -17 Td
+(- transmissions are created as GitHub Issues) Tj
+0 -17 Td
+(- the Issues remain discussion records only) Tj
+0 -17 Td
+(- no permanent markdown archive files are being generated yet) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Required behavior:) Tj
+0 -17 Td
+(- approved Issues should automatically become markdown files in the repository) Tj
+0 -17 Td
+(- Brandon Hatfield, LPC should not need to manually copy and paste issue contents) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Implementation goals:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(1. Trigger Mechanism) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1257 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(Create a GitHub Action or equivalent workflow that activates when:) Tj
+0 -17 Td
+(- a specific label is added) Tj
+0 -17 Td
+(- OR an issue is closed with approval) Tj
+0 -17 Td
+(- OR another lightweight supervised trigger is selected) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Suggested labels:) Tj
+0 -17 Td
+(- canonize) Tj
+0 -17 Td
+(- Active Canon) Tj
+0 -17 Td
+(- approved) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(2. Markdown Export) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(When triggered:) Tj
+0 -17 Td
+(- read the issue contents) Tj
+0 -17 Td
+(- preserve markdown formatting) Tj
+0 -17 Td
+(- create a markdown file in the repository) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Suggested directory structure:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(/transmissions/2026/) Tj
+0 -17 Td
+(CC-TX-2026-05-27-001.md) Tj
+0 -17 Td
+(CC-TX-2026-05-27-002.md) Tj
+0 -17 Td
+(CC-TX-2026-05-27-003.md) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(3. Metadata Preservation) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Preserve:) Tj
+0 -17 Td
+(- transmission ID) Tj
+0 -17 Td
+(- title) Tj
+0 -17 Td
+(- sender) Tj
+0 -17 Td
+(- recipient) Tj
+0 -17 Td
+(- tags) Tj
+0 -17 Td
+(- summary) Tj
+0 -17 Td
+(- body) Tj
+0 -17 Td
+(- decisions) Tj
+0 -17 Td
+(- next actions) Tj
+0 -17 Td
+(- timestamps) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(4. Workflow Philosophy) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1092 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(GitHub Issues should function as:) Tj
+0 -17 Td
+(- drafting space) Tj
+0 -17 Td
+(- collaboration space) Tj
+0 -17 Td
+(- discussion history) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Markdown files should function as:) Tj
+0 -17 Td
+(- durable archive entries) Tj
+0 -17 Td
+(- finalized historical records) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The automation layer should bridge those two states.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Priority:) Tj
+0 -17 Td
+(This workflow is now a primary infrastructure task because the transmission system is) Tj
+0 -17 Td
+(already operational.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(End transmission.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Markdown selected as archive format) Tj
+0 -17 Td
+(- Canonization should be automated but supervised) Tj
+0 -17 Td
+(- Manual copy/paste workflows should be avoided) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Cody implements workflow automation) Tj
+0 -17 Td
+(- Brandon Hatfield, LPC tests trigger behavior) Tj
+0 -17 Td
+(- Gregory validates resulting archive structure) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000203 00000 n 
+0000000329 00000 n 
+0000002100 00000 n 
+0000002226 00000 n 
+0000003535 00000 n 
+0000003661 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+4805
+%%EOF

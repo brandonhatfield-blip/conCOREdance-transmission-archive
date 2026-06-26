@@ -20,5 +20,8 @@
     "therapist-control"
   ],
   "path": "2026/CC-TX-2026-06-21-001/",
-  "metadata_path": "2026/CC-TX-2026-06-21-001/metadata.json"
+  "metadata_path": "2026/CC-TX-2026-06-21-001/metadata.json",
+  "html_path": "2026/CC-TX-2026-06-21-001/index.html",
+  "pdf_path": "2026/CC-TX-2026-06-21-001/transmission.pdf",
+  "markdown_path": "transmissions/2026/CC-TX-2026-06-21-001.md"
 }

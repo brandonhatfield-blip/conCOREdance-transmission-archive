@@ -217,10 +217,11 @@ body{
   position:absolute;
   inset:0;
   opacity:0;
-  animation:sessionFade 18s infinite;
+  animation:sessionFade 24s infinite;
 }
 .session-slide:nth-child(2){animation-delay:6s}
 .session-slide:nth-child(3){animation-delay:12s}
+.session-slide:nth-child(4){animation-delay:18s}
 .session-slide img{
   width:100%;
   height:100%;
@@ -232,6 +233,7 @@ body{
 .session-slide:nth-child(1) img{object-position:center 48%}
 .session-slide:nth-child(2) img{object-position:center 44%}
 .session-slide:nth-child(3) img{object-position:center 43%}
+.session-slide:nth-child(4) img{object-position:center 42%}
 .session-dots{
   position:absolute;
   left:24px;
@@ -246,10 +248,11 @@ body{
   border-radius:50%;
   background:rgba(244,239,232,.42);
   box-shadow:0 0 14px rgba(0,0,0,.45);
-  animation:dotFade 18s infinite;
+  animation:dotFade 24s infinite;
 }
 .session-dots span:nth-child(2){animation-delay:6s}
 .session-dots span:nth-child(3){animation-delay:12s}
+.session-dots span:nth-child(4){animation-delay:18s}
 .session-image:after{
   content:"";
   position:absolute;
@@ -261,13 +264,13 @@ body{
   pointer-events:none;
 }
 @keyframes sessionFade{
-  0%,30%{opacity:1}
-  33.333%,96.667%{opacity:0}
+  0%,22%{opacity:1}
+  25%,97%{opacity:0}
   100%{opacity:1}
 }
 @keyframes dotFade{
-  0%,30%{background:var(--gold2);box-shadow:0 0 16px rgba(231,173,103,.48)}
-  33.333%,96.667%{background:rgba(244,239,232,.42);box-shadow:0 0 14px rgba(0,0,0,.45)}
+  0%,22%{background:var(--gold2);box-shadow:0 0 16px rgba(231,173,103,.48)}
+  25%,97%{background:rgba(244,239,232,.42);box-shadow:0 0 14px rgba(0,0,0,.45)}
   100%{background:var(--gold2);box-shadow:0 0 16px rgba(231,173,103,.48)}
 }
 @media(prefers-reduced-motion:reduce){
@@ -399,6 +402,7 @@ body{
 .portrait.gregory{object-position:50% 36%}
 .portrait.cody{object-position:52% 30%}
 .portrait.paula{object-position:50% 34%}
+.portrait.ada{object-position:50% 30%}
 .portrait.simon{object-position:50% 34%}
 .card-body{
   padding:24px 24px 22px;
@@ -488,7 +492,7 @@ body{
   .team-section{padding:24px}
   .team-grid,.primary-grid{grid-template-columns:1fr}
   .consultant-grid{grid-template-columns:1fr}
-  .consultant-row{grid-template-columns:1fr}
+  .consultant-row,.consultant-grid .consultant-row{grid-template-columns:1fr}
   .consultant-row .portrait-wrap{height:245px;border-right:0;border-bottom:1px solid rgba(255,255,255,.09)}
 }
 @media(max-width:640px){
@@ -541,12 +545,15 @@ body{
         <div class="session-slide">
           <img src="../assets/team/team-candid-working.jpg" alt="The ConCOREdance team collaborating around a table with notes and clinical reference books" />
         </div>
-        <div class="session-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="session-slide">
+          <img src="../assets/team/team-council-lineup.png" alt="The ConCOREdance Architecture Council standing together" />
+        </div>
+        <div class="session-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
       </figure>
       <div class="session-copy">
         <p class="label">Working Session</p>
         <h3 id="working-session-title">Continuity in practice.</h3>
-        <p>The project develops through disciplined conversation: clinical judgment, continuity architecture, implementation engineering, and consultation brought to the same table.</p>
+      <p>The project develops through disciplined conversation: clinical judgment, continuity architecture, native implementation, human experience, and ecosystem research brought to the same table.</p>
       </div>
     </div>
   </section>
@@ -580,8 +587,8 @@ body{
         <div class="card-body">
           <p class="role-label">Continuity Architecture</p>
           <h4>Gregory P. Turing</h4>
-          <p class="title">Chief Continuity Architect</p>
-          <p class="bio">Continuity architecture, doctrine development, transmission systems, narrative infrastructure, strategic integration.</p>
+          <p class="title">Product Philosophy &amp; Systems Architecture</p>
+          <p class="bio">Gregory imagines the future of ConCOREdance through product philosophy, systems architecture, doctrine development, and strategic continuity.</p>
           <p class="focus-title">Focus Areas</p>
           <ul class="focus-list">
             <li>Continuity architecture</li>
@@ -600,8 +607,8 @@ body{
         <div class="card-body">
           <p class="role-label">Implementation Engineering</p>
           <h4>Cody Vale</h4>
-          <p class="title">Lead Implementation Engineer</p>
-          <p class="bio">Cody Vale oversees implementation systems, automation architecture, and operational infrastructure for the ConCOREdance initiative.</p>
+          <p class="title">Software Architecture &amp; Native Development</p>
+          <p class="bio">Cody builds the technical foundation through software architecture, native development, automation, and operational infrastructure.</p>
           <p class="focus-title">Focus Areas</p>
           <ul class="focus-list">
             <li>System architecture</li>
@@ -616,7 +623,7 @@ body{
 
     </div>
 
-    <div class="section-heading" style="margin-top:34px"><span class="num">02</span><h3>Consultants</h3></div>
+    <div class="section-heading" style="margin-top:34px"><span class="num">02</span><h3>ConCOREdance Council</h3></div>
     <div class="consultant-grid">
       <article class="consultant-row">
         <div class="portrait-wrap">
@@ -625,8 +632,8 @@ body{
         <div class="card-body">
           <p class="role-label">Clinical Consultation</p>
           <h4>Simon Morneau</h4>
-          <p class="title">Clinical Systems Consultant</p>
-          <p class="bio">Gestalt-informed clinical consultation, relational process, therapeutic integration, human systems theory.</p>
+          <p class="title">Clinical Operations &amp; Ethics</p>
+          <p class="bio">Simon ensures that the system remains clinically grounded, ethically attentive, and aligned with real therapeutic operations.</p>
           <p class="focus-title">Focus Areas</p>
           <ul class="focus-list">
             <li>Gestalt-informed clinical consultation</li>
@@ -644,8 +651,8 @@ body{
         <div class="card-body">
           <p class="role-label">Programming Consultation</p>
           <h4>Paula Accord</h4>
-          <p class="title">Programming Consultant</p>
-          <p class="bio">Implementation support for focused programming passes, testable workflow improvements, persistence confidence, and clinical-product infrastructure.</p>
+          <p class="title">Human Experience &amp; Accessibility</p>
+          <p class="bio">Paula ensures that ConCOREdance serves people through accessible workflows, humane interaction patterns, and careful experience review.</p>
           <p class="focus-title">Focus Areas</p>
           <ul class="focus-list">
             <li>Vault persistence tests</li>
@@ -653,6 +660,29 @@ body{
             <li>Editable continuity signals</li>
             <li>Generated note export controls</li>
             <li>Accessibility and resizing review</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="consultant-row">
+        <div class="portrait-wrap">
+          <img class="portrait ada" src="../assets/team/ada-vance.png" alt="Portrait of Ada Vance" />
+        </div>
+        <div class="card-body">
+          <p class="role-label">Research &amp; Interoperability</p>
+          <h4>Ada Vance</h4>
+          <p class="title">Research, Interoperability &amp; Ecosystem Strategy</p>
+          <p class="bio">Ada anchors ConCOREdance in evidence, standards, and the realities of the broader technology ecosystem while helping the team evaluate future-facing architecture.</p>
+          <p class="focus-title">Focus Areas</p>
+          <ul class="focus-list">
+            <li>Research and technical validation</li>
+            <li>Interoperability and open standards</li>
+            <li>Google Workspace and Microsoft 365 ecosystems</li>
+            <li>API and integration strategy</li>
+            <li>Vendor and platform analysis</li>
+            <li>Long-term technology roadmapping</li>
+            <li>Build vs. buy decision support</li>
+            <li>Future systems architecture</li>
           </ul>
         </div>
       </article>

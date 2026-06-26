@@ -1,0 +1,214 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1986 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Atmospheric Continuity & Adaptive Panels Implementation Pass) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-05-27-005 | 2026-05-27 | Active Canon) Tj
+0 -16 Td
+(Layer: Visual Shell / Interaction Architecture) Tj
+0 -16 Td
+(From: Cody Valle) Tj
+0 -16 Td
+(To: Brandon Hatfield, LPC and Gregory) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(Completed the next SwiftUI shell pass focused on atmospheric cohesion, adaptive narrative) Tj
+0 -17 Td
+(panels, identity rail refinement, and continuity visibility.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-05-27-005) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Directive:** CC-TX-2026-05-27-003) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(This transmission records completion of the active programming directive from CC-) Tj
+0 -17 Td
+(TX-2026-05-27-003.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The implementation pass moved ConCOREdance further away from a flat prototype dashboard and) Tj
+0 -17 Td
+(closer to the intended atmospheric shell: contemplative, lightly futuristic, clinically) Tj
+0 -17 Td
+(useful, and visually inhabited.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The work focused on four directive areas:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- adaptive expansion integrity) Tj
+0 -17 Td
+(- atmospheric depth) Tj
+0 -17 Td
+(- identity rail refinement) Tj
+0 -17 Td
+(- continuity preservation) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The shell background now includes layered atmospheric depth, phase-aware glow fields, and) Tj
+0 -17 Td
+(subtle path linework.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The left identity rail now includes a temporal phase badge, depth linework, refined hover) Tj
+0 -17 Td
+(and active state animation, and scroll handling for the lower doctrine and palette area so) Tj
+0 -17 Td
+(the rail remains usable at smaller window heights.) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2246 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(The right continuity rail now includes a Continuity Signals section so the side surface) Tj
+0 -17 Td
+(reads more like clinical memory and less like an assortment of preview widgets.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The document preview now includes adaptive panels for:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Presenting Circumstances) Tj
+0 -17 Td
+(- Presenting Focus) Tj
+0 -17 Td
+(- Interpretative Summary) Tj
+0 -17 Td
+(- Summary of Session) Tj
+0 -17 Td
+(- Continuity Archive Preview) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Collapsed panels now retain compact clinical preview text instead of becoming visually empty) Tj
+0 -17 Td
+(slabs. Expanded panels resize to their content and avoid fixed-height assumptions.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Build verification passed successfully with `swift build`.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Snapshot rendering also completed successfully for the vault gate, home dashboard, and full) Tj
+0 -17 Td
+(shell.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Treat adaptive sizing behavior as non-negotiable UX doctrine.) Tj
+0 -17 Td
+(- Keep continuity context visible in the shell without letting it dominate the) Tj
+0 -17 Td
+(workspace.) Tj
+0 -17 Td
+(- Use atmospheric depth as a cognitive support layer, not decoration for its own sake.) Tj
+0 -17 Td
+(- Preserve screenshots as part of the implementation record.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Brandon Hatfield, LPC reviews the rendered shell for subjective atmosphere, spacing,) Tj
+0 -17 Td
+(and readability.) Tj
+0 -17 Td
+(- Confirm the left rail does not feel crowded at the intended minimum window size.) Tj
+0 -17 Td
+(- Confirm continuity signals feel clinically useful rather than decorative.) Tj
+0 -17 Td
+(- Confirm adaptive panels animate and collapse or expand naturally during live use.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Assets) Tj
+/F1 11 Tf
+0 -20 Td
+(- [Vault Gate]\(../../archive/2026/CC-TX-2026-05-27-005/assets/conCOREdance-vault.png\)) Tj
+0 -17 Td
+(- [Home Dashboard]\(../../archive/2026/CC-TX-2026-05-27-005/assets/conCOREdance-) Tj
+0 -17 Td
+(dashboard.png\)) Tj
+0 -17 Td
+(- [Full Shell]\(../../archive/2026/CC-TX-2026-05-27-005/assets/conCOREdance-shell.png\)) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000002361 00000 n 
+0000002487 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4785
+%%EOF

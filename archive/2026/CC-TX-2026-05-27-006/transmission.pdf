@@ -1,0 +1,271 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2121 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Workflow Spine & Clinical Object Model Implementation Pass) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-05-27-006 | 2026-05-27 | Active Canon) Tj
+0 -16 Td
+(Layer: Product Architecture / Clinical Workflow) Tj
+0 -16 Td
+(From: Gregory P. Turing) Tj
+0 -16 Td
+(To: Cody Valle) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(The ConCOREdance shell has reached its first atmospheric and interaction milestone. The next) Tj
+0 -17 Td
+(programming pass should move the project from visual shell toward functional clinical) Tj
+0 -17 Td
+(product by implementing the workflow spine: a real session lifecycle, a foundational) Tj
+0 -17 Td
+(clinical object model, local persistence, draft document generation, and visible continuity) Tj
+0 -17 Td
+(handoff between session work and archive memory.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-05-27-006) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Issue:** #5) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Cody,) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Yesterday's pass gave ConCOREdance a room to inhabit. Today's task is to put a nervous) Tj
+0 -17 Td
+(system in the room.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The app should now begin behaving like an actual clinical companion rather than a beautiful) Tj
+0 -17 Td
+(prototype shell. This means creating the first functional layer that allows a user to move) Tj
+0 -17 Td
+(from dashboard into active session work, capture structured clinical material, preserve) Tj
+0 -17 Td
+(continuity signals, and produce a usable draft artifact at the end of the workflow.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The goal is not to finish the entire product. The goal is to establish the architecture that) Tj
+0 -17 Td
+(future clinical features can trust.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Primary objectives:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(1. Home / Today Dashboard) Tj
+0 -17 Td
+(- Display sample sessions or work items.) Tj
+0 -17 Td
+(- Include metadata and continuity cues.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1643 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(- Selecting an item should open an active session workspace.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(2. Active Session Workspace) Tj
+0 -17 Td
+(- Structured adaptive panels for:) Tj
+0 -17 Td
+(- Presenting Circumstances) Tj
+0 -17 Td
+(- Presenting Focus) Tj
+0 -17 Td
+(- Interventions / Clinical Work) Tj
+0 -17 Td
+(- Client Response) Tj
+0 -17 Td
+(- Interpretative Summary) Tj
+0 -17 Td
+(- Plan / Follow-up) Tj
+0 -17 Td
+(- Continuity Signals) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(3. Clinical Object Model) Tj
+0 -17 Td
+(- Define foundational models for:) Tj
+0 -17 Td
+(- Client or Case Reference) Tj
+0 -17 Td
+(- Session) Tj
+0 -17 Td
+(- Clinical Note Draft) Tj
+0 -17 Td
+(- Continuity Signal) Tj
+0 -17 Td
+(- Document Artifact) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(4. Local Persistence / Draft State) Tj
+0 -17 Td
+(- Preserve draft state locally.) Tj
+0 -17 Td
+(- Editing should survive navigation and refresh during development.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(5. Draft Output Preview) Tj
+0 -17 Td
+(- Generate a coherent structured draft from session fields.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(6. Continuity Handoff) Tj
+0 -17 Td
+(- The continuity rail should respond dynamically to active session context.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Design doctrine:) Tj
+0 -17 Td
+(- Preserve atmospheric cohesion.) Tj
+0 -17 Td
+(- Adaptive panels remain non-negotiable.) Tj
+0 -17 Td
+(- Continuity should feel supportive, not intrusive.) Tj
+0 -17 Td
+(- Screenshot-ready after each pass.) Tj
+0 -17 Td
+(- No real PHI or network dependencies.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Build expectations:) Tj
+0 -17 Td
+(- swift build passes.) Tj
+0 -17 Td
+(- Dashboard-to-session navigation works.) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1085 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(- Fixture data renders correctly.) Tj
+0 -17 Td
+(- Draft preview updates live.) Tj
+0 -17 Td
+(- Continuity rail reacts to session context.) Tj
+0 -17 Td
+(- Generate screenshots if snapshot pipeline remains active.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Visual shell phase is sufficient to begin workflow architecture.) Tj
+0 -17 Td
+(- Functional depth now takes priority over further decorative refinement.) Tj
+0 -17 Td
+(- ConCOREdance should begin modeling actual clinical workflow behavior using safe) Tj
+0 -17 Td
+(fixture data.) Tj
+0 -17 Td
+(- Local-first architecture remains preferred.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Define Swift models.) Tj
+0 -17 Td
+(- Add fixture data.) Tj
+0 -17 Td
+(- Implement dashboard navigation.) Tj
+0 -17 Td
+(- Build editable session workspace.) Tj
+0 -17 Td
+(- Add generated note preview.) Tj
+0 -17 Td
+(- Connect continuity rail state.) Tj
+0 -17 Td
+(- Verify build and screenshots.) Tj
+0 -17 Td
+(- Report implementation findings and constraints.) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000203 00000 n 
+0000000329 00000 n 
+0000002502 00000 n 
+0000002628 00000 n 
+0000004323 00000 n 
+0000004449 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5586
+%%EOF

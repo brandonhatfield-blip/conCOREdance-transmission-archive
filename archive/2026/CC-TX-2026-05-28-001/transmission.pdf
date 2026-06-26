@@ -1,0 +1,190 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2500 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Paula Accord Programming Consultant Orientation) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-05-28-001 | 2026-05-28 | Active Canon) Tj
+0 -16 Td
+(Layer: Personnel / Project Onboarding) Tj
+0 -16 Td
+(From: Cody Valle) Tj
+0 -16 Td
+(To: Brandon Hatfield, LPC, Gregory, and Paula Accord) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(Paula Accord has joined ConCOREdance as a programming consultant, oriented to the) Tj
+0 -17 Td
+(transmission archive, current SwiftUI prototype, implementation doctrine, and near-term) Tj
+0 -17 Td
+(engineering queue.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-05-28-001) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source:** Local orientation record) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Paula Accord has been added to the ConCOREdance project team as a programming consultant) Tj
+0 -17 Td
+(supporting focused implementation passes alongside Cody Valle.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Her orientation established the archive as project memory, not decoration. Paula was) Tj
+0 -17 Td
+(directed to treat the transmission archive as the canonical record for product doctrine,) Tj
+0 -17 Td
+(implementation history, design intent, and collaboration expectations. The current working) Tj
+0 -17 Td
+(context begins with the workflow-spine directive and implementation record: CC-) Tj
+0 -17 Td
+(TX-2026-05-27-006 and CC-TX-2026-05-27-007.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Paula reviewed the SwiftUI prototype structure, including the encrypted vault layer, fixture) Tj
+0 -17 Td
+(clinical data, active-session workflow, draft preview, and continuity rail. The orientation) Tj
+0 -17 Td
+(emphasized that ConCOREdance remains local-first, therapist-owned, export-friendly, and) Tj
+0 -17 Td
+(unsuitable for real PHI until the alpha security model receives independent review.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The agreed collaboration pattern is straightforward: Paula takes bounded, testable) Tj
+0 -17 Td
+(programming work that can move in parallel with Cody's architecture and archive stewardship.) Tj
+0 -17 Td
+(Cody remains responsible for integration judgment, canon consistency, and preserving) Tj
+0 -17 Td
+(Gregory's visual and philosophical direction.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Paula's first recommended workstream is the foundation layer beneath the workflow spine:) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1671 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(vault persistence tests, complete-session flow, editable continuity signals, note) Tj
+0 -17 Td
+(copy/export controls, and accessibility/resizing review.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Paula Accord is recognized as Programming Consultant for ConCOREdance.) Tj
+0 -17 Td
+(- Paula should use the transmission archive as canonical project memory before beginning) Tj
+0 -17 Td
+(substantial implementation work.) Tj
+0 -17 Td
+(- Paula's work should focus on bounded, testable programming passes that strengthen the) Tj
+0 -17 Td
+(product without disrupting design doctrine.) Tj
+0 -17 Td
+(- No real PHI should be used in Paula's work; fixture/sample data remains the only) Tj
+0 -17 Td
+(acceptable development data.) Tj
+0 -17 Td
+(- Cody will continue to coordinate integration, archive consistency, and final) Tj
+0 -17 Td
+(implementation alignment.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Add Swift test coverage for VaultCrypto, VaultStore persistence, ClinicalFixtureData) Tj
+0 -17 Td
+(integrity, and draft output.) Tj
+0 -17 Td
+(- Implement complete-session flow that turns an active draft into a ready-for-review) Tj
+0 -17 Td
+(note artifact.) Tj
+0 -17 Td
+(- Add editable continuity signals with mutations persisted through VaultStore.) Tj
+0 -17 Td
+(- Add copy/export controls for note drafts.) Tj
+0 -17 Td
+(- Review active-session accessibility, keyboard behavior, contrast, and resize) Tj
+0 -17 Td
+(stability.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Assets) Tj
+/F1 11 Tf
+0 -20 Td
+(- [Paula Accord Headshot]\(../../archive/assets/personnel/paula_accord_headshot.png\)) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000002875 00000 n 
+0000003001 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4724
+%%EOF

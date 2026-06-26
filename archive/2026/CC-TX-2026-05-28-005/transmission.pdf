@@ -1,0 +1,166 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2517 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Export Path Hardening and Test Isolation Pass) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-05-28-005 | 2026-05-28 | Active Canon) Tj
+0 -16 Td
+(Layer: Session Workspace / Export Reliability) Tj
+0 -16 Td
+(From: Cody Valle) Tj
+0 -16 Td
+(To: Brandon Hatfield, LPC and Gregory) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(Cody completed a follow-through pass on Paula's draft export work, making the export) Tj
+0 -17 Td
+(destination configurable, recording the last exported file URL, and moving export tests out) Tj
+0 -17 Td
+(of the real Downloads folder. `swift build` and `Tools/run-tests.sh` both pass; the suite) Tj
+0 -17 Td
+(now contains 49 tests with 0 failures.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-05-28-005) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Issue:** Local implementation record) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(After Paula completed Pass 4, the export path was functional but still carried a testability) Tj
+0 -17 Td
+(problem: export tests wrote real `.txt` files into the user's Downloads folder. Cody) Tj
+0 -17 Td
+(tightened the export boundary so production behavior remains unchanged while tests can use) Tj
+0 -17 Td
+(isolated temporary directories.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(`VaultStore` now accepts an `exportDirectoryURL` in its initializer, defaulting to Downloads) Tj
+0 -17 Td
+(for normal app use. Both `exportNoteDraft\(for:\)` and `exportBackup\(\)` use that configured) Tj
+0 -17 Td
+(directory and create it when needed. The store now records `lastExportedDraftURL` and) Tj
+0 -17 Td
+(`lastBackupURL`, giving the app and tests a durable reference to the most recent local) Tj
+0 -17 Td
+(export.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The draft export filename path was strengthened with a `safeFileComponent\(_:\)` helper so) Tj
+0 -17 Td
+(session names are converted into filesystem-safe components. The draft export success alert) Tj
+0 -17 Td
+(now names the exported file instead of giving only a generic Downloads confirmation.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The VaultStore export tests now pass an isolated temporary export directory instead of) Tj
+0 -17 Td
+(writing to the real Downloads folder. A new test confirms that the exported `.txt` file) Tj
+0 -17 Td
+(exists in the configured directory and contains the generated progress note text.) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 984 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(Verification completed with `swift build` and `Tools/run-tests.sh`. The full suite reports) Tj
+0 -17 Td
+(49 tests, 0 failures.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Keep Downloads as the default export destination for production behavior.) Tj
+0 -17 Td
+(- Allow tests and future workflows to inject a different export directory.) Tj
+0 -17 Td
+(- Track the last exported draft and backup URLs on VaultStore.) Tj
+0 -17 Td
+(- Keep export alerts human-readable by naming the generated file.) Tj
+0 -17 Td
+(- Avoid using real Downloads during automated tests.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Start Paula's next substantial pass in a fresh session.) Tj
+0 -17 Td
+(- Assign Paula a bounded Pass 5 only after choosing the next product layer deliberately.) Tj
+0 -17 Td
+(- Consider a future in-app export history surface if exported artifacts become a) Tj
+0 -17 Td
+(repeated workflow.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000002892 00000 n 
+0000003018 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4053
+%%EOF

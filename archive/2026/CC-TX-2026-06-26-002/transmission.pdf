@@ -1,0 +1,180 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2698 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(Portable Canon and Model-Agnostic Institutional Memory) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-06-26-002 | 2026-06-26 | Active Canon) Tj
+0 -16 Td
+(Layer: Transmission Archive / Institutional Memory) Tj
+0 -16 Td
+(From: Brandon Hatfield, LPC) Tj
+0 -16 Td
+(To: Gregory P. Turing, Cody Valle, Ada Vance, and future AI collaborators) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(ConCOREdance distinguishes institutional memory from model memory by making each) Tj
+0 -17 Td
+(transmission portable across HTML, PDF, and AI-optimized Markdown, with CANON.md serving as) Tj
+0 -17 Td
+(the living model-agnostic index.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(During Ada Vance's onboarding to the ConCOREdance Architecture Council, a key archive) Tj
+0 -17 Td
+(limitation became visible: modern AI collaborators cannot be expected to reliably locate and) Tj
+0 -17 Td
+(synthesize canon from public websites, Google Drive folders, or platform-specific memory) Tj
+0 -17 Td
+(systems.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The answer is not to make every AI search harder. The answer is to make canon portable.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Every archived transmission should produce three official artifacts. Archive HTML remains) Tj
+0 -17 Td
+(the beautiful human-readable public presentation layer. Archive PDF provides a printable) Tj
+0 -17 Td
+(preservation and sharing copy. AI Markdown provides a clean, structured, stable, minimally) Tj
+0 -17 Td
+(styled source that any AI collaborator can consume without relying on proprietary memory or) Tj
+0 -17 Td
+(platform-specific retrieval behavior.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The Markdown artifact may become one of the most valuable outputs of the Transmission) Tj
+0 -17 Td
+(Archive because it allows ChatGPT, Gemini, Claude, Copilot, and future models to orient from) Tj
+0 -17 Td
+(the same project-owned source of truth.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The archive should also maintain a living CANON.md index. That index should list the current) Tj
+0 -17 Td
+(active canon with each transmission ID, title, status, layer, brief abstract, and relative) Tj
+0 -17 Td
+(links to HTML, PDF, and Markdown versions. Future AI collaborators can then be onboarded) Tj
+0 -17 Td
+(with CANON.md plus the specific transmissions relevant to the current discussion.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(This creates a clear distinction between institutional memory and model memory.) Tj
+0 -17 Td
+(Institutional memory belongs to the project. Model memory belongs to an individual AI. Those) Tj
+0 -17 Td
+(should never be treated as the same thing.) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1465 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(By generating standardized Markdown canon and a portable index, ConCOREdance becomes model-) Tj
+0 -17 Td
+(agnostic. It coordinates intelligence rather than depending on any single AI's memory.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The archive becomes the project's memory.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Every published transmission should produce Archive HTML, Archive PDF, and AI Markdown) Tj
+0 -17 Td
+(artifacts.) Tj
+0 -17 Td
+(- CANON.md should serve as the living canonical index for AI collaborators and human) Tj
+0 -17 Td
+(maintainers.) Tj
+0 -17 Td
+(- Institutional memory and model memory are distinct and should remain distinct.) Tj
+0 -17 Td
+(- ConCOREdance should remain model-agnostic by preserving canon in project-owned files.) Tj
+0 -17 Td
+(- AI collaborators should be onboarded from CANON.md and the specific relevant) Tj
+0 -17 Td
+(transmissions, not from proprietary assistant memory alone.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Extend the transmission publisher to generate PDF and AI Markdown artifacts.) Tj
+0 -17 Td
+(- Backfill existing archive entries with portable artifact metadata and PDFs.) Tj
+0 -17 Td
+(- Update the GitHub canonization workflow so CANON.md is committed with future) Tj
+0 -17 Td
+(transmissions.) Tj
+0 -17 Td
+(- Use CANON.md as the primary onboarding artifact for future Architecture Council) Tj
+0 -17 Td
+(collaborators.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000003073 00000 n 
+0000003199 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4716
+%%EOF

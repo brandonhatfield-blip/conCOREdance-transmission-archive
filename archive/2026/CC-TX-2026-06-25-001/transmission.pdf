@@ -1,0 +1,477 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1730 >>
+stream
+BT
+72 742 Td
+/F1 18 Tf
+(The Choreography Layer: ConCOREdance as an Intelligent Coordination Platform) Tj
+/F1 10 Tf
+0 -24 Td
+(CC-TX-2026-06-25-001 | 2026-06-25 | Active Canon) Tj
+0 -16 Td
+(Layer: Platform Architecture / Foundational Philosophy) Tj
+0 -16 Td
+(From: Gregory P. Turing) Tj
+0 -16 Td
+(To: Brandon Hatfield, LPC and Cody Valle) Tj
+0 -16 Td
+(Authorized By: Brandon Hatfield, LPC) Tj
+/F1 11 Tf
+0 -16 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Summary) Tj
+/F1 11 Tf
+0 -20 Td
+(A foundational architectural realization emerged during discussion of scheduling,) Tj
+0 -17 Td
+(signatures, Google Workspace, Microsoft 365, data ownership, and therapist workflow) Tj
+0 -17 Td
+(fragmentation.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The central insight:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(**The problem facing therapists is not a lack of tools. The problem is a lack of) Tj
+0 -17 Td
+(coordination between tools.**) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(ConCOREdance should not primarily position itself as another EHR, document repository,) Tj
+0 -17 Td
+(calendar application, or practice management platform.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(ConCOREdance should position itself as an intelligent coordination layer.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Body) Tj
+/F1 11 Tf
+0 -20 Td
+(**ID:** CC-TX-2026-06-25-001) Tj
+0 -17 Td
+(**Status:** Active Canon) Tj
+0 -17 Td
+(**Authorized By:** Brandon Hatfield, LPC) Tj
+0 -17 Td
+(**Source Issue:** #11) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Core Principle) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The clinician owns the data.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The clinician owns the documents.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The clinician owns the calendar.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The clinician owns the relationships.) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1384 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(The clinician chooses the infrastructure.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(ConCOREdance should coordinate systems without requiring clinicians to surrender ownership.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Architectural Direction) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Instead of a monolithic platform, establish provider abstraction layers:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Identity Provider) Tj
+0 -17 Td
+(- Storage Provider) Tj
+0 -17 Td
+(- Calendar Provider) Tj
+0 -17 Td
+(- Email Provider) Tj
+0 -17 Td
+(- Signature Provider) Tj
+0 -17 Td
+(- Telehealth Provider) Tj
+0 -17 Td
+(- Task Provider) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(ConCOREdance becomes the orchestration layer above these systems.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Platform Partners) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(First-class support should be planned for:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Google Workspace) Tj
+0 -17 Td
+(- Gmail) Tj
+0 -17 Td
+(- Google Calendar) Tj
+0 -17 Td
+(- Google Drive) Tj
+0 -17 Td
+(- Google Docs) Tj
+0 -17 Td
+(- Google eSignature) Tj
+0 -17 Td
+(- Google Contacts) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Microsoft 365) Tj
+0 -17 Td
+(- Outlook Mail) Tj
+0 -17 Td
+(- Outlook Calendar) Tj
+0 -17 Td
+(- OneDrive) Tj
+0 -17 Td
+(- SharePoint) Tj
+0 -17 Td
+(- Word) Tj
+0 -17 Td
+(- Microsoft Identity) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The therapist should not be required to migrate into a proprietary ecosystem.) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1429 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(### Calendar Intelligence Layer) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(A major discovery of this transmission is that scheduling chaos is fundamentally a) Tj
+0 -17 Td
+(coordination problem.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Current state:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Headway publishes events) Tj
+0 -17 Td
+(- Sondermind publishes events) Tj
+0 -17 Td
+(- Personal calendars publish events) Tj
+0 -17 Td
+(- Google and Outlook publish events) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(No system understands the intentions of the others.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Proposed Solution) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Create a Master Schedule within conCOREdance.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The Master Schedule should:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Aggregate events from multiple systems) Tj
+0 -17 Td
+(- Detect duplicates) Tj
+0 -17 Td
+(- Detect conflicts) Tj
+0 -17 Td
+(- Detect impossible scheduling situations) Tj
+0 -17 Td
+(- Publish availability intelligently) Tj
+0 -17 Td
+(- Become a scheduling authority rather than a passive calendar) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Semantic Scheduling) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Traditional systems ask:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+('Is this slot available?') Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(ConCOREdance should eventually ask:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+('Is this slot appropriate?') Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Future considerations:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Session type awareness) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1287 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(- Therapist preferences) Tj
+0 -17 Td
+(- Fatigue management) Tj
+0 -17 Td
+(- Buffer recommendations) Tj
+0 -17 Td
+(- Intake complexity) Tj
+0 -17 Td
+(- Couples-session requirements) Tj
+0 -17 Td
+(- Clinical workflow optimization) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Data Sovereignty Initiative) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Guiding principle:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(**Your data stays where you put it.**) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Potential supported repositories:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Google Drive) Tj
+0 -17 Td
+(- OneDrive / SharePoint) Tj
+0 -17 Td
+(- Dropbox Business) Tj
+0 -17 Td
+(- Box) Tj
+0 -17 Td
+(- Self-hosted storage) Tj
+0 -17 Td
+(- Synology) Tj
+0 -17 Td
+(- QNAP) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(ConCOREdance should coordinate data rather than requiring custody of data whenever possible.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Signature Architecture) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Develop a Signature Provider Layer.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Potential providers:) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(- Google eSignature) Tj
+0 -17 Td
+(- Microsoft ecosystem solutions) Tj
+0 -17 Td
+(- BoldSign) Tj
+0 -17 Td
+(- Dropbox Sign) Tj
+0 -17 Td
+(- DocuSign) Tj
+0 -17 Td
+(- Future Native conCOREdance Signature Engine) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Goal:) Tj
+0 -17 Td
+() Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 1239 >>
+stream
+BT
+72 742 Td
+/F1 11 Tf
+(A clinician chooses a provider while maintaining a consistent workflow.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(### Canonical Observation) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The architecture may have been embedded in the name from the beginning.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(ConCOREdance.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(Not records.) Tj
+0 -17 Td
+(Not storage.) Tj
+0 -17 Td
+(Not repository.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The choreography.) Tj
+0 -17 Td
+() Tj
+0 -17 Td
+(The movement of independent systems around a common center.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Decisions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Future architectural decisions should be evaluated using the question:) Tj
+0 -17 Td
+(- Does this increase coordination without reducing ownership?) Tj
+0 -17 Td
+(- If yes, proceed.) Tj
+0 -17 Td
+(- If no, reconsider.) Tj
+0 -17 Td
+() Tj
+/F1 14 Tf
+0 -17 Td
+(Next Actions) Tj
+/F1 11 Tf
+0 -20 Td
+(- Calendar Intelligence Layer) Tj
+0 -17 Td
+(- Master Schedule Architecture) Tj
+0 -17 Td
+(- Provider Abstraction Framework) Tj
+0 -17 Td
+(- Data Sovereignty Initiative) Tj
+0 -17 Td
+(- Signature Provider Layer) Tj
+0 -17 Td
+(- Semantic Scheduling Engine) Tj
+0 -17 Td
+(- Google Workspace Integration) Tj
+0 -17 Td
+(- Microsoft 365 Integration) Tj
+ET
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000147 00000 n 
+0000000217 00000 n 
+0000000343 00000 n 
+0000002125 00000 n 
+0000002251 00000 n 
+0000003687 00000 n 
+0000003813 00000 n 
+0000005294 00000 n 
+0000005422 00000 n 
+0000006762 00000 n 
+0000006890 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+8182
+%%EOF
