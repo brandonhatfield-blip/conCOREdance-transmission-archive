@@ -16,7 +16,7 @@ html{scroll-behavior:smooth}
 body{
   margin:0; min-height:100vh; color:var(--cream);
   font-family: Inter, Avenir Next, Avenir, Segoe UI, system-ui, sans-serif;
-  letter-spacing:.01em; background:#050914;
+  letter-spacing:.01em; background:#050914; overflow-x:hidden;
 }
 .vista{
   position:fixed; inset:0; z-index:-2;
@@ -61,8 +61,8 @@ body{
 .sigil .h{left:-14px;top:50%;width:104px;height:1px;transform:translateY(-50%)}
 .brand h1{margin:0;font-family:Cormorant Garamond, Georgia, serif;font-weight:400;font-size:clamp(30px,4vw,50px);line-height:.92;letter-spacing:-.02em}
 .brand p,.kicker,.label{margin:8px 0 0;color:var(--gold2);font-size:12px;letter-spacing:.38em;text-transform:uppercase}
-.hero-title{font-family:Cormorant Garamond, Georgia, serif;font-weight:300;font-size:clamp(54px,7vw,96px);line-height:.94;letter-spacing:-.035em;margin:0 0 22px;text-wrap:balance}
-.participants{color:var(--gold);letter-spacing:.36em;text-transform:uppercase;font-size:15px;margin-bottom:28px}
+.hero-title{font-family:Cormorant Garamond, Georgia, serif;font-weight:300;font-size:clamp(36px,4.2vw,52px);line-height:1.08;letter-spacing:0;margin:0 0 22px;text-wrap:balance}
+.participants{color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:13px;line-height:1.5;margin-bottom:28px}
 .lede{max-width:650px;color:rgba(244,239,232,.86);font-size:19px;line-height:1.66;margin:0 0 44px}
 .divider{height:1px;width:480px;max-width:100%;background:linear-gradient(90deg,var(--gold),transparent);position:relative;margin:0 0 28px}
 .divider:after{content:"*";position:absolute;right:44%;top:-11px;color:var(--gold);text-shadow:0 0 18px var(--gold)}
@@ -77,18 +77,19 @@ body{
 .star.s1{right:24%;top:18%}.star.s2{right:48%;top:34%}.star.s3{right:12%;top:42%}
 .section{margin-top:22px;padding:34px 38px}
 .section-title{display:flex;align-items:baseline;gap:18px;margin-bottom:24px}
-.section-title .num{color:var(--gold);font-size:30px;font-weight:300}
-.section-title h2{margin:0;text-transform:uppercase;letter-spacing:.22em;font-size:15px;font-weight:700}
-.copy p,.tx-body p,.card p{margin:0 0 18px;color:rgba(244,239,232,.84);font-size:17px;line-height:1.68}
-.tx-body ul{margin:0 0 18px;padding-left:22px;color:rgba(244,239,232,.84);font-size:17px;line-height:1.68}
+.section-title .num{color:var(--gold);font-size:24px;font-weight:300}
+.section-title h2{margin:0;text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:700}
+.copy p,.tx-body p,.card p{margin:0 0 18px;color:rgba(244,239,232,.86);font-size:18px;line-height:1.72}
+.tx-body ul{margin:0 0 18px;padding-left:22px;color:rgba(244,239,232,.86);font-size:18px;line-height:1.72}
 .tx-body li{margin-bottom:8px}
 strong{color:var(--gold2);font-weight:650}
 a{color:var(--gold2)}
 .tx{display:grid;grid-template-columns:250px 1fr;gap:28px;padding:30px 0;border-top:1px solid rgba(255,255,255,.1)}
 .tx:first-of-type{border-top:0;padding-top:0}
 .tx-meta{color:var(--muted);font-size:12px;line-height:1.85;text-transform:uppercase;letter-spacing:.14em}
+.tx-meta,.tx-body{min-width:0;overflow-wrap:anywhere}
 .tx-meta b{color:var(--gold);font-weight:500}
-.tx-body h3{margin:0 0 12px;font-family:Cormorant Garamond, Georgia, serif;font-size:34px;font-weight:400}
+.tx-body h3{margin:0 0 14px;font-family:Cormorant Garamond, Georgia, serif;font-size:28px;line-height:1.18;font-weight:400}
 .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}
 .pill{border:1px solid rgba(231,173,103,.42);border-radius:999px;padding:7px 11px;color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:.11em;background:rgba(231,173,103,.08)}
 .asset-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:18px}
@@ -99,7 +100,7 @@ figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:va
 .card{border:1px solid var(--soft);background:rgba(5,10,20,.38);border-radius:14px;padding:22px}
 .card h4{margin:0 0 12px;color:var(--gold2);text-transform:uppercase;letter-spacing:.14em;font-size:13px}
 .footer-band{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;margin-top:22px;padding:30px 40px}
-.footer-band blockquote{margin:0;font-family:Cormorant Garamond, Georgia, serif;font-size:30px;font-style:italic;color:rgba(244,239,232,.86)}
+.footer-band blockquote{margin:0;font-family:Cormorant Garamond, Georgia, serif;font-size:24px;line-height:1.28;font-style:italic;color:rgba(244,239,232,.86)}
 .footer-band span{color:var(--gold)}
 @media(max-width:900px){
   .hero,.tx,.footer-band,.asset-grid,.card-grid{grid-template-columns:1fr}

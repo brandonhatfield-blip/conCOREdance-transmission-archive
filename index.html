@@ -25,6 +25,7 @@ body{
   min-height:100vh;
   color:var(--cream);
   background:#050914;
+  overflow-x:hidden;
   font-family:Inter,Avenir Next,Avenir,Segoe UI,system-ui,sans-serif;
 }
 .vista{
@@ -92,10 +93,10 @@ a{color:var(--gold2)}
 .hero h2{
   margin:0 0 24px;
   font-family:Cormorant Garamond,Georgia,serif;
-  font-size:clamp(56px,7vw,98px);
-  line-height:.94;
+  font-size:clamp(38px,4.8vw,58px);
+  line-height:1.04;
   font-weight:300;
-  letter-spacing:-.035em;
+  letter-spacing:0;
   text-wrap:balance;
 }
 .lede{font-size:20px;line-height:1.65;color:rgba(244,239,232,.88);max-width:760px;margin:0 0 34px}
@@ -156,8 +157,8 @@ a{color:var(--gold2)}
   box-shadow:0 24px 80px var(--shadow);
 }
 .section-title{display:flex;align-items:baseline;gap:18px;margin-bottom:26px}
-.section-title span{color:var(--gold);font-size:30px;font-weight:300}
-.section-title h2{margin:0;text-transform:uppercase;letter-spacing:.22em;font-size:15px}
+.section-title span{color:var(--gold);font-size:24px;font-weight:300}
+.section-title h2{margin:0;text-transform:uppercase;letter-spacing:.16em;font-size:13px}
 .copy{max-width:900px;color:rgba(244,239,232,.84);font-size:18px;line-height:1.68;margin:0 0 20px}
 .map-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .map-card,.visual-card,.principle,.step{
@@ -204,7 +205,7 @@ a{color:var(--gold2)}
   gap:28px;
   align-items:center;
 }
-.footer blockquote{margin:0;font-family:Cormorant Garamond,Georgia,serif;font-size:30px;font-style:italic;color:rgba(244,239,232,.88)}
+.footer blockquote{margin:0;font-family:Cormorant Garamond,Georgia,serif;font-size:24px;line-height:1.28;font-style:italic;color:rgba(244,239,232,.88)}
 @media(max-width:980px){
   .hero,.map-grid,.workflow,.principles{grid-template-columns:1fr}
   .hero-stack{min-height:480px}
@@ -213,8 +214,12 @@ a{color:var(--gold2)}
   .visual-grid{grid-template-columns:1fr}
 }
 @media(max-width:680px){
-  .page{width:min(100% - 24px,1180px)}
-  .hero{padding-top:30px}
+  .page{width:min(calc(100% - 24px),1180px)}
+  .brand-row{gap:12px}
+  .brand h1{font-size:34px}
+  .brand p{letter-spacing:.22em}
+  .sigil{width:58px;height:58px}
+  .hero{gap:0;padding-top:30px}
   .proof-grid{grid-template-columns:1fr}
   .section,.footer{padding:26px 22px}
   .hero-stack{min-height:390px}
